@@ -1,0 +1,7 @@
+{
+    "ngVersion": "18.2.0",
+    "validateSpec": true,
+    "modelFileSuffix": ".model",
+    "withInterfaces": true,
+    "useSingleRequestParameter": true
+}

@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "cognitive-care-front"
+		},
+		{
+			"path": "cognitive-care-back"
+		},
+		{
+			"path": "cognitive-care-scripts"
+		},
+		{
+			"path": "cognitive-care-doc-references"
+		}
+	],
+	"settings": {
+		"editor.formatOnSave": false
+	}
+}

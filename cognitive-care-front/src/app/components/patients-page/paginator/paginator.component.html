@@ -1,0 +1,25 @@
+<div class="items-center p-4 my-4 mx-4 bg-white rounded-2xl shadow-xl shadow-gray-200 sm:flex sm:justify-between">
+    <div class="flex items-center mb-4 sm:mb-0">
+        <button (click)="changePage('previous')"
+            class="inline-flex justify-center p-1 text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100">
+            <app-icon icon="bi-chevron-left" class="w-6 h-6"></app-icon>
+        </button>
+        <button (click)="changePage('next')"
+            class="inline-flex justify-center p-1 mr-2 text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100">
+            <app-icon icon="bi-chevron-right" class="w-6 h-6"></app-icon>
+        </button>
+        <span class="text-sm font-normal text-gray-500">Showing <span class="font-semibold text-gray-900">{{ offset() }} - {{ limit() }}</span> of <span class="font-semibold text-gray-900">{{ total() }}</span></span>
+    </div>
+    <div class="flex items-center space-x-3">
+        <app-button class="inline-flex flex-1 justify-center items-center align-middle gap-2" (click)="changePage('previous')">
+            <div class="inline-flex justify-center items-center align-middle gap-2">
+                  <app-icon icon="bi-chevron-left" class="w-4 h-4"></app-icon>Previous
+            </div>
+        </app-button>
+        <app-button class="inline-flex flex-1 justify-center items-center align-middle" (click)="changePage('next')">
+            <div class="inline-flex justify-center items-center align-middle gap-2">
+                Next  <app-icon icon="bi-chevron-right" class="w-4 h-4"></app-icon>
+            </div>
+        </app-button>
+    </div>
+</div>

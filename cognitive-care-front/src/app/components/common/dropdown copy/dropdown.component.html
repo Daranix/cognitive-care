@@ -1,0 +1,29 @@
+<div>
+    <label [htmlFor]="name()" class="text-sm font-medium text-gray-700">
+        {{ label() }}
+    </label>
+    <div class="relative">
+        <select
+            #selectorRef
+            [name]="name()"
+            [disabled]="disabled()"
+            (change)="onSelect($event)"
+            [ngClass]="{ 'border-red-500 dark:border-red-400': (ngControl?.errors && (ngControl?.dirty || ngControl?.touched)) }"
+            class="w-full bg-white border border-gray-300 rounded-md py-2 px-3 appearance-none text-gray-800 shadow-sm"
+        >
+            @for (option of options(); track $index) {
+                <option [value]="option[key()]">{{ option[selectLabel()] }}</option>
+            }
+        </select>
+        <app-icon icon="bi-chevron-down" class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none" />
+    </div>
+    @if(ngControl?.errors && (ngControl?.dirty || ngControl?.touched)) {
+        @for (error of getErrorMessages(ngControl?.errors); track $index) {
+            @if(error) {
+                <div class="pt-1 text-sm text-red-500 dark:text-red-400">
+                    {{ error }}
+                </div>
+            }
+        }
+    }
+</div>

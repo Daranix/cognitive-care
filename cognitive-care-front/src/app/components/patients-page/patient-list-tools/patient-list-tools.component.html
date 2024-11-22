@@ -1,0 +1,23 @@
+<div
+    class="block justify-between items-center p-4 mx-4 mt-4 mb-6 bg-white rounded-2xl shadow-xl shadow-gray-200 lg:p-5 sm:flex">
+    <div class="mb-1 w-full">
+        <div class="mb-4">
+            <h1 class="text-xl font-semibold text-gray-900 sm:text-2xl">All users</h1>
+        </div>
+        <div class="sm:flex">
+            <div class="hidden items-center mb-3 sm:flex sm:divide-x sm:divide-gray-100 sm:mb-0">
+                <form class="lg:pr-3" action="#" method="GET">
+                    <label for="users-search" class="sr-only">Search</label>
+                    <div class="relative mt-1 lg:w-64 xl:w-96">
+                        <input type="text" name="email" id="users-search"
+                            class="border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-2 focus:ring-fuchsia-50 focus:border-fuchsia-300 block w-full p-2.5"
+                            placeholder="Search for users">
+                    </div>
+                </form>
+            </div>
+            <div class="flex items-center ml-auto space-x-2 sm:space-x-3">
+                <app-button type="button" >Register new patient</app-button>
+            </div>
+        </div>
+    </div>
+</div>

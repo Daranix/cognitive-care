@@ -1,0 +1,7 @@
+<main>
+
+    <app-patient-list-tools/>
+    <app-patient-list [dataSource]="patientList()"/>
+    <app-paginator [limit]="limit" [page]="page()" [total]="total()" (pageChanged)="onPageChanged($event)" />
+
+</main>

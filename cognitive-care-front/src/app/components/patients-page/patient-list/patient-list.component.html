@@ -1,0 +1,67 @@
+<div class="flex flex-col my-6 mx-4 rounded-2xl shadow-xl shadow-gray-200">
+    <div class="overflow-x-auto rounded-2xl">
+        <div class="inline-block min-w-full align-middle">
+            <div class="overflow-hidden shadow-lg">
+                <table class="min-w-full divide-y divide-gray-200 table-fixed">
+                    <thead class="bg-white">
+                        <tr>
+                            <th scope="col"
+                                class="p-4 text-xs font-medium text-left text-gray-500 uppercase lg:p-5">
+                                Name
+                            </th>
+                            <th scope="col"
+                                class="p-4 text-xs font-medium text-left text-gray-500 uppercase lg:p-5">
+                                Next appointment
+                            </th>
+                            <th scope="col"
+                                class="p-4 text-xs font-medium text-left text-gray-500 uppercase lg:p-5">
+                                Last appointment
+                            </th>
+                            <th scope="col" class="p-4 lg:p-5 ">
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+
+                        @if(dataSource().loading) {
+
+                        } @else {
+
+                            @if(dataSource().error) {
+                                <tr class="hover:bg-gray-100">
+                                    <td class="p-4 text-base font-medium text-gray-900 whitespace-nowrap lg:p-5">An error ocurred loading the reccords.</td>
+                                </tr>
+                            } @else if(dataSource().data?.length === 0) {
+                                <tr class="hover:bg-gray-100">
+                                    <td class="p-4 text-base font-medium text-gray-900 whitespace-nowrap lg:p-5">No records.</td>
+                                </tr>
+                            } @else {
+                                @for (patient of dataSource().data; track $index) {
+                                    <tr class="hover:bg-gray-100">
+                                        <td class="flex items-center p-4 mr-12 space-x-6 whitespace-nowrap lg:p-5 lg:mr-0">
+                                            <div class="text-sm font-normal text-gray-500">
+                                                <div class="text-base font-semibold text-gray-900">{{ patient.patientName }}</div>
+                                                <div class="text-sm font-normal text-gray-500">{{ patient.patientDni }}</div>
+                                            </div>
+                                        </td>
+                                        <td class="p-4 text-base font-medium text-gray-900 whitespace-nowrap lg:p-5">{{ patient.nextAppointment }}</td>
+                                        <td class="p-4 text-base font-medium text-gray-900 whitespace-nowrap lg:p-5">{{ patient.lastAppointment }}
+                                        </td>
+                                        <td class="p-4 space-x-2 whitespace-nowrap lg:p-5">
+                                            <button type="button" data-modal-toggle="user-modal"
+                                                class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-gray-700 bg-gray-200 rounded-lg hover:bg-gray-300 hover:text-gray-900 hover:scale-[1.02] transition-all">
+                                                <app-icon icon="bi-pencil-square" class="w-4 h-4"></app-icon>
+                                                View details
+                                            </button>
+                                        </td>
+                                    </tr>
+                                }
+                            }
+                        }
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

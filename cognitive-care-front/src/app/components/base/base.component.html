@@ -1,0 +1,11 @@
+<div class="h-full">
+    <app-top-navbar (toggleSidebar)="toggleSidebarHandle()" />
+    <div class="flex pt-16 overflow-hidden bg-gray-50 dark:bg-gray-900 h-full">
+        <app-sidebar [showMenu]="sidebarOpen()"/>
+        <div id="main-content" class="relative w-full h-full overflow-y-auto bg-gray-50 lg:ml-64 dark:bg-gray-900">
+            <main class="h-full">
+                <router-outlet />
+            </main>
+        </div>
+    </div>
+</div>

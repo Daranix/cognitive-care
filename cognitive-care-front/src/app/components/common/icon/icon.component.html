@@ -1,0 +1,8 @@
+
+@if(icon().startsWith('bi')) {
+    <svg [class]="'bi ' +  class()" width="32" height="32" fill="currentColor">
+        <use [attr.xlink:href]="iconPath()"/>
+    </svg>
+} @else {
+    <img [src]="iconPath()" width="32" height="32">
+}
