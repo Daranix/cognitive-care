@@ -1,5 +1,5 @@
-import { HttpErrorResponse } from "@angular/common/http";
-import { Observable, catchError, of, startWith, map } from "rxjs";
+import type { HttpErrorResponse } from "@angular/common/http";
+import { type Observable, catchError, of, startWith, map } from "rxjs";
 
 export interface Loading<T> { loading: boolean; error: boolean; data?: T | null };
 export const LOADING_INITIAL_VALUE = { loading: true, error: false, data: null } as const;

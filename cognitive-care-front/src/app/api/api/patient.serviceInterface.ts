@@ -11,6 +11,7 @@ import { HttpHeaders }                                       from '@angular/comm
 
 import { Observable }                                        from 'rxjs';
 
+import { AppointmentSmallDto } from '../model/models';
 import { CreatePatientDto } from '../model/models';
 import { PatientDto } from '../model/models';
 import { PatientSmallDto } from '../model/models';
@@ -19,8 +20,12 @@ import { PatientSmallDto } from '../model/models';
 import { Configuration }                                     from '../configuration';
 
 
-export interface CreatePatientRequestParams {
+export interface CreateOrUpdatePatientRequestParams {
     createPatientDto: CreatePatientDto;
+}
+
+export interface FindAppointmentsRequestParams {
+    patientId: string;
 }
 
 export interface FindPatientByIdRequestParams {
@@ -45,7 +50,14 @@ export interface PatientServiceInterface {
      * 
 * @param requestParameters
      */
-    createPatient(requestParameters: CreatePatientRequestParams, extraHttpRequestParams?: any): Observable<PatientDto>;
+    createOrUpdatePatient(requestParameters: CreateOrUpdatePatientRequestParams, extraHttpRequestParams?: any): Observable<PatientDto>;
+
+    /**
+     * 
+     * 
+* @param requestParameters
+     */
+    findAppointments(requestParameters: FindAppointmentsRequestParams, extraHttpRequestParams?: any): Observable<Array<AppointmentSmallDto>>;
 
     /**
      * 

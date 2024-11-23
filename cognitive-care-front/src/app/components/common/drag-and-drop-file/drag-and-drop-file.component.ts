@@ -1,10 +1,10 @@
-import { Component, ElementRef, HostListener, Injector, OnDestroy, OnInit, Renderer2, forwardRef, inject, input, model, output, signal, viewChild } from '@angular/core';
-import { ControlContainer, ControlValueAccessor, FormControl, FormControlDirective, FormControlName, FormGroup, NG_VALUE_ACCESSOR, NgControl, NgModel, ValidationErrors } from '@angular/forms';
+import { Component, type ElementRef, HostListener, Injector, type OnDestroy, type OnInit, Renderer2, forwardRef, inject, input, model, output, signal, viewChild } from '@angular/core';
+import { ControlContainer, type ControlValueAccessor, FormControl, FormControlDirective, FormControlName, type FormGroup, NG_VALUE_ACCESSOR, NgControl, NgModel, type ValidationErrors } from '@angular/forms';
 import { formatBytes } from '@/app/utils';
 import { NgClass } from '@angular/common';
 import { FileSizePipe } from '@/app/pipes/file-size.pipe';
-import { ToastService } from '@/app/services/toast.service';
-import { Subscription } from 'rxjs';
+import type { Subscription } from 'rxjs';
+import { HotToastService } from '@ngxpert/hot-toast';
 
 @Component({
   selector: 'app-drag-and-drop-file',
@@ -26,7 +26,7 @@ export class DragAndDropFileComponent implements ControlValueAccessor, OnInit, O
   readonly maxFileSize = input<number>();
   readonly name = input.required<string>();
   private readonly fileUploadInput = viewChild<ElementRef<HTMLInputElement>>('fileUploadInput');
-  private readonly toastService = inject(ToastService);
+  private readonly toastService = inject(HotToastService);
   readonly onFileChange = output<File | undefined>();
   private readonly injector = inject(Injector);
   private readonly renderer2 = inject(Renderer2);
@@ -74,6 +74,7 @@ export class DragAndDropFileComponent implements ControlValueAccessor, OnInit, O
     // this.setProperty('value', value);
   }
 
+  // biome-ignore lint/suspicious/noExplicitAny: Generic component
   registerOnChange(fn: (value?: File) => any): void {
     this.onChange = (value?: File) => {
       this.file.set(value);
@@ -81,6 +82,8 @@ export class DragAndDropFileComponent implements ControlValueAccessor, OnInit, O
     };
   }
 
+
+  // biome-ignore lint/suspicious/noExplicitAny: Generic component
   registerOnTouched(fn: any): void {
     this.onTouch = fn;
   }
@@ -98,11 +101,11 @@ export class DragAndDropFileComponent implements ControlValueAccessor, OnInit, O
 
     const file = files?.item(0) || undefined;
 
-    if(!file) {
+    if (!file) {
       return;
     }
 
-    if(this.maxFileSize() && file.size > this.maxFileSize()!) {
+    if (this.maxFileSize() && file.size > this.maxFileSize()!) {
       this.toastService.error(`The file exceeds the maximun size limit ${formatBytes(this.maxFileSize()!)}`)
       return;
     }
@@ -147,6 +150,7 @@ export class DragAndDropFileComponent implements ControlValueAccessor, OnInit, O
     return keys.map((v) => this.errorMessages[v] || undefined);
   }
 
+  // biome-ignore lint/suspicious/noExplicitAny: Generic component
   setProperty(key: string, value: any): void {
     this.renderer2.setProperty(this.fileUploadInput()?.nativeElement, key, value);
   }
@@ -157,5 +161,5 @@ export class DragAndDropFileComponent implements ControlValueAccessor, OnInit, O
     this.onChange(value);
     this.onTouch();
   }
-  
+
 }

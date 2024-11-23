@@ -1,7 +1,7 @@
 import { NgClass } from '@angular/common';
-import { AfterViewInit, Component, ElementRef, forwardRef, inject, Injector, input, model, OnDestroy, OnInit, Renderer2, viewChild } from '@angular/core';
-import { ControlContainer, ControlValueAccessor, FormControl, FormControlDirective, FormControlName, FormGroup, NG_VALUE_ACCESSOR, NgControl, NgModel, ValidationErrors } from '@angular/forms';
-import { Subscription } from 'rxjs';
+import { type AfterViewInit, Component, type ElementRef, forwardRef, inject, Injector, input, model, type OnDestroy, type OnInit, Renderer2, viewChild } from '@angular/core';
+import { ControlContainer, type ControlValueAccessor, FormControl, FormControlDirective, FormControlName, type FormGroup, NG_VALUE_ACCESSOR, NgControl, NgModel, type ValidationErrors } from '@angular/forms';
+import type { Subscription } from 'rxjs';
 import { IconComponent } from '../icon/icon.component';
 
 @Component({
@@ -41,11 +41,6 @@ export class DropdownComponent<T> implements ControlValueAccessor, OnInit, OnDes
     'required': 'Field is required'
   };
 
-  constructor() {
-    /*if(this.ngControl != null) {
-      this.ngControl.valueAccessor = this;
-    }*/
-  }
   ngAfterViewInit(): void {
     const defaultValue = this.getDefaultValue()
     this.control?.setValue(defaultValue);
@@ -64,6 +59,7 @@ export class DropdownComponent<T> implements ControlValueAccessor, OnInit, OnDes
     this.setProperty('value', value);
   }
 
+  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
   registerOnChange(fn: (value: any) => any): void {
     this.onChange = (value: unknown) => {
       this.value.set(value);
@@ -71,6 +67,7 @@ export class DropdownComponent<T> implements ControlValueAccessor, OnInit, OnDes
     };
   }
 
+  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
   registerOnTouched(fn: any): void {
     this.onTouched = fn;
   }
@@ -78,7 +75,7 @@ export class DropdownComponent<T> implements ControlValueAccessor, OnInit, OnDes
   setDisabledState?(isDisabled: boolean): void {
     this.disabled.set(isDisabled)
   }
-    
+
   onSelect(ev: Event) {
     const selectValue = ev.target as HTMLSelectElement;
     const value = selectValue.value as unknown;
@@ -110,7 +107,7 @@ export class DropdownComponent<T> implements ControlValueAccessor, OnInit, OnDes
         this.control = new FormControl();
       }
     }
-    
+
     this.updateValue(this.getDefaultValue());
 
   }
@@ -137,9 +134,10 @@ export class DropdownComponent<T> implements ControlValueAccessor, OnInit, OnDes
   }
 
   private getDefaultValue() {
-    return this.options()[0][this.key()];;
+    return this.options()[0][this.key()];
   }
 
+  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
   setProperty(key: string, value: any): void {
     this.renderer2.setProperty(this.selectRef()?.nativeElement, key, value);
   }

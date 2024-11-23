@@ -10,6 +10,7 @@
 
 
 export interface CreatePatientDto { 
+    id: string;
     fullName: string;
     dni: string;
     birthDate: string;

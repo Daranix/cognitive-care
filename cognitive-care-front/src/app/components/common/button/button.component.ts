@@ -11,5 +11,6 @@ export class ButtonComponent {
 
   loading = input<boolean>(false);
   type = input<'button' | 'submit'>('button');
+  disabled = input(false);
 
 }

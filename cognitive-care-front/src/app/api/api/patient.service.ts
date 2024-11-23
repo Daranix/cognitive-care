@@ -17,6 +17,8 @@ import { CustomHttpParameterCodec }                          from '../encoder';
 import { Observable }                                        from 'rxjs';
 
 // @ts-ignore
+import { AppointmentSmallDto } from '../model/appointmentSmallDto.model';
+// @ts-ignore
 import { CreatePatientDto } from '../model/createPatientDto.model';
 // @ts-ignore
 import { PatientDto } from '../model/patientDto.model';
@@ -28,7 +30,8 @@ import { BASE_PATH, COLLECTION_FORMATS }                     from '../variables'
 import { Configuration }                                     from '../configuration';
 import {
     PatientServiceInterface,
-    CreatePatientRequestParams,
+    CreateOrUpdatePatientRequestParams,
+    FindAppointmentsRequestParams,
     FindPatientByIdRequestParams,
     RemovePatientByIdRequestParams,
     SearchPatientsRequestParams
@@ -107,13 +110,13 @@ export class PatientService implements PatientServiceInterface {
      * @param observe set whether or not to return the data Observable as the body, response or events. defaults to returning the body.
      * @param reportProgress flag to report request and response progress.
      */
-    public createPatient(requestParameters?: CreatePatientRequestParams, observe?: 'body', reportProgress?: boolean, options?: {httpHeaderAccept?: 'application/json', context?: HttpContext, transferCache?: boolean}): Observable<PatientDto>;
-    public createPatient(requestParameters?: CreatePatientRequestParams, observe?: 'response', reportProgress?: boolean, options?: {httpHeaderAccept?: 'application/json', context?: HttpContext, transferCache?: boolean}): Observable<HttpResponse<PatientDto>>;
-    public createPatient(requestParameters?: CreatePatientRequestParams, observe?: 'events', reportProgress?: boolean, options?: {httpHeaderAccept?: 'application/json', context?: HttpContext, transferCache?: boolean}): Observable<HttpEvent<PatientDto>>;
-    public createPatient(requestParameters?: CreatePatientRequestParams, observe: any = 'body', reportProgress: boolean = false, options?: {httpHeaderAccept?: 'application/json', context?: HttpContext, transferCache?: boolean}): Observable<any> {
+    public createOrUpdatePatient(requestParameters?: CreateOrUpdatePatientRequestParams, observe?: 'body', reportProgress?: boolean, options?: {httpHeaderAccept?: 'application/json', context?: HttpContext, transferCache?: boolean}): Observable<PatientDto>;
+    public createOrUpdatePatient(requestParameters?: CreateOrUpdatePatientRequestParams, observe?: 'response', reportProgress?: boolean, options?: {httpHeaderAccept?: 'application/json', context?: HttpContext, transferCache?: boolean}): Observable<HttpResponse<PatientDto>>;
+    public createOrUpdatePatient(requestParameters?: CreateOrUpdatePatientRequestParams, observe?: 'events', reportProgress?: boolean, options?: {httpHeaderAccept?: 'application/json', context?: HttpContext, transferCache?: boolean}): Observable<HttpEvent<PatientDto>>;
+    public createOrUpdatePatient(requestParameters?: CreateOrUpdatePatientRequestParams, observe: any = 'body', reportProgress: boolean = false, options?: {httpHeaderAccept?: 'application/json', context?: HttpContext, transferCache?: boolean}): Observable<any> {
         const createPatientDto = requestParameters?.createPatientDto;
         if (createPatientDto === null || createPatientDto === undefined) {
-            throw new Error('Required parameter createPatientDto was null or undefined when calling createPatient.');
+            throw new Error('Required parameter createPatientDto was null or undefined when calling createOrUpdatePatient.');
         }
 
         let localVarHeaders = this.defaultHeaders;
@@ -166,6 +169,71 @@ export class PatientService implements PatientServiceInterface {
             {
                 context: localVarHttpContext,
                 body: createPatientDto,
+                responseType: <any>responseType_,
+                withCredentials: this.configuration.withCredentials,
+                headers: localVarHeaders,
+                observe: observe,
+                transferCache: localVarTransferCache,
+                reportProgress: reportProgress
+            }
+        );
+    }
+
+    /**
+     * 
+     * @param requestParameters
+     * @param observe set whether or not to return the data Observable as the body, response or events. defaults to returning the body.
+     * @param reportProgress flag to report request and response progress.
+     */
+    public findAppointments(requestParameters?: FindAppointmentsRequestParams, observe?: 'body', reportProgress?: boolean, options?: {httpHeaderAccept?: 'application/json', context?: HttpContext, transferCache?: boolean}): Observable<Array<AppointmentSmallDto>>;
+    public findAppointments(requestParameters?: FindAppointmentsRequestParams, observe?: 'response', reportProgress?: boolean, options?: {httpHeaderAccept?: 'application/json', context?: HttpContext, transferCache?: boolean}): Observable<HttpResponse<Array<AppointmentSmallDto>>>;
+    public findAppointments(requestParameters?: FindAppointmentsRequestParams, observe?: 'events', reportProgress?: boolean, options?: {httpHeaderAccept?: 'application/json', context?: HttpContext, transferCache?: boolean}): Observable<HttpEvent<Array<AppointmentSmallDto>>>;
+    public findAppointments(requestParameters?: FindAppointmentsRequestParams, observe: any = 'body', reportProgress: boolean = false, options?: {httpHeaderAccept?: 'application/json', context?: HttpContext, transferCache?: boolean}): Observable<any> {
+        const patientId = requestParameters?.patientId;
+        if (patientId === null || patientId === undefined) {
+            throw new Error('Required parameter patientId was null or undefined when calling findAppointments.');
+        }
+
+        let localVarHeaders = this.defaultHeaders;
+
+        let localVarHttpHeaderAcceptSelected: string | undefined = options && options.httpHeaderAccept;
+        if (localVarHttpHeaderAcceptSelected === undefined) {
+            // to determine the Accept header
+            const httpHeaderAccepts: string[] = [
+                'application/json'
+            ];
+            localVarHttpHeaderAcceptSelected = this.configuration.selectHeaderAccept(httpHeaderAccepts);
+        }
+        if (localVarHttpHeaderAcceptSelected !== undefined) {
+            localVarHeaders = localVarHeaders.set('Accept', localVarHttpHeaderAcceptSelected);
+        }
+
+        let localVarHttpContext: HttpContext | undefined = options && options.context;
+        if (localVarHttpContext === undefined) {
+            localVarHttpContext = new HttpContext();
+        }
+
+        let localVarTransferCache: boolean | undefined = options && options.transferCache;
+        if (localVarTransferCache === undefined) {
+            localVarTransferCache = true;
+        }
+
+
+        let responseType_: 'text' | 'json' | 'blob' = 'json';
+        if (localVarHttpHeaderAcceptSelected) {
+            if (localVarHttpHeaderAcceptSelected.startsWith('text')) {
+                responseType_ = 'text';
+            } else if (this.configuration.isJsonMime(localVarHttpHeaderAcceptSelected)) {
+                responseType_ = 'json';
+            } else {
+                responseType_ = 'blob';
+            }
+        }
+
+        let localVarPath = `/patient/${this.configuration.encodeParam({name: "patientId", value: patientId, in: "path", style: "simple", explode: false, dataType: "string", dataFormat: undefined})}/appointments`;
+        return this.httpClient.request<Array<AppointmentSmallDto>>('get', `${this.configuration.basePath}${localVarPath}`,
+            {
+                context: localVarHttpContext,
                 responseType: <any>responseType_,
                 withCredentials: this.configuration.withCredentials,
                 headers: localVarHeaders,

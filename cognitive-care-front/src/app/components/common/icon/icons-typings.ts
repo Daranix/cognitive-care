@@ -1,5 +1,5 @@
-import { BiIcon } from "./bootstrap-icons";
-import { CusIcon } from "./custom-icons";
+import type { BiIcon } from "./bootstrap-icons";
+import type { CusIcon } from "./custom-icons";
 
 
 export type IconGroupInfo = {

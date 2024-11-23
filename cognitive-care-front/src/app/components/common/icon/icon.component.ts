@@ -1,5 +1,5 @@
 import { Component, computed, input } from '@angular/core';
-import { Icon, IconGroupInfo, iconGroups } from './icons-typings';
+import { type Icon, IconGroupInfo, iconGroups } from './icons-typings';
 import { NgClass } from '@angular/common';
 
 @Component({

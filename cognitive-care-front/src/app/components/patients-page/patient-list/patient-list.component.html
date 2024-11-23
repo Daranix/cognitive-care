@@ -24,7 +24,9 @@
                     <tbody class="bg-white divide-y divide-gray-200">
 
                         @if(dataSource().loading) {
-
+                            <tr class="hover:bg-gray-100">
+                                <td class="p-4 text-base font-medium text-gray-900 whitespace-nowrap lg:p-5">Loading ... </td>
+                            </tr>
                         } @else {
 
                             @if(dataSource().error) {
@@ -48,8 +50,8 @@
                                         <td class="p-4 text-base font-medium text-gray-900 whitespace-nowrap lg:p-5">{{ patient.lastAppointment }}
                                         </td>
                                         <td class="p-4 space-x-2 whitespace-nowrap lg:p-5">
-                                            <button type="button" data-modal-toggle="user-modal"
-                                                class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-gray-700 bg-gray-200 rounded-lg hover:bg-gray-300 hover:text-gray-900 hover:scale-[1.02] transition-all">
+                                            <button [routerLink]="['/patient', patient.patientId]" type="button" data-modal-toggle="user-modal"
+                                                class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-gray-700 bg-gray-200 rounded-lg hover:bg-gray-300 hover:text-gray-900 hover:scale-[1.02] transition-all gap-2">
                                                 <app-icon icon="bi-pencil-square" class="w-4 h-4"></app-icon>
                                                 View details
                                             </button>

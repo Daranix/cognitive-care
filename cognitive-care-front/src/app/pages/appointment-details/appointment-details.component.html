@@ -1,0 +1,115 @@
+<form class="min-h-screen bg-gray-50 py-8" #appointmentForm="ngForm">
+    <div class="max-w-2xl mx-auto">
+        <!-- Main Form Card -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <div class="mb-6">
+                <h2 class="text-2xl font-bold text-gray-800">Appointment Details</h2>
+            </div>
+
+            <div class="space-y-6">
+                <!-- Appointment Section -->
+                <div class="space-y-4">
+                    <h3 class="text-lg font-semibold text-gray-700">Appointment</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Date</label>
+                            <input name="date" [(ngModel)]="appointmentDay.date" type="date"
+                                class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Time</label>
+                            <input name="time" type="time" [(ngModel)]="appointmentDay.time"
+                                class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                required>
+                        </div>
+                    </div>
+                </div>
+                    
+                    <!-- Summary Section -->
+                    <div class="space-y-4">
+                        <h3 class="text-lg font-semibold text-gray-700">Notes</h3>
+                        <div>
+                            <textarea rows="4"
+                                class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 resize-none"
+                                placeholder="Enter appointment summary..." required>
+                            </textarea>
+                        </div>
+                    </div>
+                    <!-- Submit Button -->
+                    <div class="flex justify-end pt-4">
+                        <button (click)="save(appointmentForm)" type="button"
+                            class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors">
+                            Save Appointment Details
+                        </button>
+                    </div>
+                    <hr />
+
+                    @if(appointmentId() !== 'new') {
+
+                        <!-- Audio upload -->
+                            <div class="space-y-4">
+                            <h3 class="text-lg font-semibold text-gray-700">Session Audio</h3>
+                            <div>
+                                @if(!appointment().data?.audioFile && !audioFile() || wantToUploadNew()) {
+                                    <app-drag-and-drop-file name="audioFile" (onFileChange)="fileChanged($event)"></app-drag-and-drop-file>
+                                } @else if(appointment().data?.audioFile && !audioFile()) {
+                                    <app-button type="button" (click)="loadAudioFile()">Listen the audio</app-button>
+                                }
+
+                                @if(audioFile()) {
+                                    <audio controls [src]="audioFileUrl()" class="pb-2 pt-2 w-full">
+                                        Your browser does not support the <code>audio</code> element.
+                                    </audio>
+                                    <div class="flex gap-2">
+                                        @if(appointment().data?.audioFile && !wantToUploadNew()) {
+                                            <app-button type="button" (click)="cleanAudioFile()">Upload other session audio</app-button>
+                                        } @else {
+                                            <app-button type="button" (click)="uploadFile()" [loading]="isUploadingAudio()">Upload Audio</app-button>
+                                            <app-button type="button" (click)="cleanAudioFile()" [disabled]="isUploadingAudio()">Cancel</app-button>
+                                        }
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                        @if(appointment().data?.transcription) {
+                            <!-- Transcription Section -->
+                            <hr/>
+                            <div class="space-y-4">
+                                <h3 class="text-lg font-semibold text-gray-700">Transcription</h3>
+                                <div>
+                                    @if(appointment().data?.transcription === 'processing') {
+                                        The transcription was not processed yet, refresh the page in a few minutes.
+                                    } @else {
+                                        <textarea rows="6"
+                                            disabled
+                                            class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 resize-none"
+                                            placeholder="Enter appointment transcription..." required>{{ appointment().data?.transcription }}</textarea>
+                                    }
+                                </div>
+                            </div>
+                        }
+
+                    @if(appointment().data?.transcription && appointment().data?.transcription !== 'processing' && appointment().data?.transcription !== 'error') {
+                        <hr/>
+                        <div class="space-y-4">
+                            <h3 class="text-lg font-semibold text-gray-700">AI Session Summary</h3>
+                            <div>
+                                @if(appointmentData.transcriptionSummary) {
+                                    <textarea rows="6"
+                                        disabled
+                                        class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 resize-none"
+                                        placeholder="Enter appointment transcription..." required>{{ appointmentData.transcriptionSummary }}</textarea>
+                                }
+
+                                <app-button type="button" (click)="generateSessionSummary()" [loading]="isGeneratingSummaryOfTranscription()">Generate session summary</app-button>
+
+                            </div>
+                        </div>
+                    }
+                }
+
+            </div>
+        </div>
+    </div>
+</form>

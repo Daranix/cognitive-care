@@ -13,17 +13,23 @@ import { CreatePatientDto } from './dto/create-patient.dto';
 import { ApiOperation, ApiParam, ApiTags } from '@nestjs/swagger';
 import { PatientDto } from './dto/patient.dto';
 import { PatientSmallDto } from './dto/patient-small.dto';
+import { AppointmentService } from 'src/appointment/appointment.service';
+import { AppointmentSmallDto } from 'src/appointment/dto/appointment-small.dto';
 
 @ApiTags('patient')
 @Controller('patient')
 export class PatientController {
-  constructor(private readonly patientService: PatientService) {}
+
+  constructor(
+    private readonly patientService: PatientService,
+    private readonly appointmentService: AppointmentService
+  ) { }
 
   @ApiOperation({
-    operationId: 'createPatient'
+    operationId: 'createOrUpdatePatient'
   })
   @Post()
-  create(@Body() createPatientDto: CreatePatientDto): Promise<PatientDto> {
+  createOrUpdate(@Body() createPatientDto: CreatePatientDto): Promise<PatientDto> {
     return this.patientService.create(createPatientDto);
   }
 
@@ -56,5 +62,15 @@ export class PatientController {
   @Delete(':id')
   remove(@Param('id') id: string): Promise<PatientDto> {
     return this.patientService.remove(id);
+  }
+
+  @ApiOperation({
+    operationId: 'findAppointments'
+  })
+  @Get(':patientId/appointments')
+  async findAppointments(
+    @Param('patientId') patientId: string
+  ): Promise<AppointmentSmallDto[]> {
+    return this.appointmentService.findByPatientId(patientId)
   }
 }
