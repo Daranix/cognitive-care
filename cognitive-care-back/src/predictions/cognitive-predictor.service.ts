@@ -59,9 +59,12 @@ export class CognitivePredictor {
     
                 try {
                     // Parse stdout as JSON
-                    const result = JSON.parse(stdoutData.trim()) as PredictionDataDto;
-                    this.logger.debug(`Prediction for patient_id: ${patientId} - ${stdoutData.trim()}`)
-                    resolve(result);
+                    const result = JSON.parse(stdoutData.trim());
+                    this.logger.debug(`Prediction for patient_id: ${patientId} - ${stdoutData.trim()}`);
+                    if(result.error) {
+                        throw new Error(result.error);
+                    }
+                    resolve(result as PredictionDataDto);
                 } catch (err) {
                     this.logger.error('Failed to parse JSON from Python script:', err);
                     this.logger.error('Raw output:', stdoutData);

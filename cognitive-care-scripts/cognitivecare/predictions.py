@@ -134,9 +134,9 @@ def get_cognitive_scores(patient_id: str) -> dict[str, int]:
     for result in results:
         tool_used = result['tool_used']
         try:
-            scores_json = result['scores']
+            scores = result['scores']
             # Parse JSON and calculate mean of all numeric values
-            scores = json.loads(scores_json)
+            #scores = json.loads(scores_json)
             # Calculate mean and round to integer
             mean_score = int(round(sum(float(value) for value in scores.values()) / len(scores)))
             mean_scores[tool_used] = mean_score
@@ -179,7 +179,8 @@ def main():
             "anomaly_detection": {
                 "is_anomaly": predictions['is_anomaly'],
                 "anomaly_score": predictions['anomaly_score']
-            }
+            },
+            "symptoms": patient.symptombs
         }
 
         # Output JSON to stdout

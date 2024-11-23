@@ -34,8 +34,13 @@ export class CognitiveScoreDialogComponent implements AfterViewInit {
       setTimeout(() => {
         this.cognitiveScoreFormRef()?.control.patchValue({
           cognitiveTool: this.cognitiveTools.find((tool) => tool.acronym === this.data.cognitiveScore!.toolUsed),
-          ...this.data.cognitiveScore!.scores
-        })
+        });
+        
+        setTimeout(() => {
+          this.cognitiveScoreFormRef()?.control.patchValue({
+            ...this.data.cognitiveScore!.scores
+          });
+        });
       })
     }
   }
