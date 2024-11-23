@@ -113,7 +113,7 @@
                     @for (appointment of appointments().data; track $index) {
                         <tr class="text-gray-500">
                             <td class="px-6 py-4">{{ appointment.date | date: 'dd-MM-yyyy' }}</td>
-                            <td class="px-6 py-4">{{ appointment.date | date: 'hh:mm' }}</td>
+                            <td class="px-6 py-4">{{ appointment.date | date: 'HH:mm' }}</td>
                             <td class="px-6 py-4">
                                 <button
                                     [routerLink]="['/patient', patientId(), 'appointment', appointment.id]"
