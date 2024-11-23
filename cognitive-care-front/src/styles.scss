@@ -1,8 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 @use '@ngxpert/hot-toast/src/styles/styles.scss';
+@use '@angular/cdk' as cdk;
+@include cdk.overlay();
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
 
 html, body {
     width: 100%;

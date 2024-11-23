@@ -101,9 +101,7 @@
                                         class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 resize-none"
                                         placeholder="Enter appointment transcription..." required>{{ appointmentData.transcriptionSummary }}</textarea>
                                 }
-
                                 <app-button type="button" (click)="generateSessionSummary()" [loading]="isGeneratingSummaryOfTranscription()">Generate session summary</app-button>
-
                             </div>
                         </div>
                     }

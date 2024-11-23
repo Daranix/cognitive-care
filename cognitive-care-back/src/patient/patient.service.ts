@@ -9,18 +9,19 @@ import { PatientMapper } from './mappers/patient.mapper';
 import { InjectMapper } from '@automapper/nestjs';
 import { Mapper } from '@automapper/core';
 import { PatientEntity } from './entities/patient.entity';
+import { PredictionsService } from 'src/predictions/predictions.service';
 
 @Injectable()
 export class PatientService {
 
   constructor(
+    private readonly predictionsService: PredictionsService,
     @InjectMapper() private readonly mapper: Mapper
   ) {
 
   }
 
-  async create(createPatientDto: CreatePatientDto): Promise<PatientDto> {
-
+  async createOrUpdate(createPatientDto: CreatePatientDto): Promise<PatientDto> {
 
     if (createPatientDto.id) {
 
@@ -31,12 +32,18 @@ export class PatientService {
 
       const { id, ...attrsToUpdate } = createPatientDto;
       const [result] = await db.update(patients).set(attrsToUpdate).where(eq(patients.id, id)).returning();
+      
+      if(patient.symptoms !== result.symptoms) {
+        await this.predictionsService.requestRecalculatePrediction(createPatientDto.id);
+      }
+
       return result;
     }
 
     const [result] = await db.insert(patients).values({
       ...createPatientDto,
     }).returning();
+    await this.predictionsService.requestRecalculatePrediction(createPatientDto.id);
     return result;
 
   }

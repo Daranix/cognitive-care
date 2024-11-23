@@ -150,22 +150,94 @@
 
     <!-- Cognitive Scores -->
     <div class="bg-white rounded-lg shadow-md p-6">
-        <h2 class="text-xl font-semibold mb-4">Cognitive Scores</h2>
+        <div class="flex justify-between">
+            <h2 class="text-xl font-semibold mb-4">Cognitive Scores</h2>
+            <app-button (click)="openEvaluationDialog()">Add new evaluation</app-button>
+        </div>
         <table class="min-w-full">
             <thead class="bg-gray-50">
                 <tr>
                     <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Date</th>
+                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Tool</th>
                     <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Score</th>
                     <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Observations</th>
                 </tr>
             </thead>
             <tbody class="bg-white divide-y divide-gray-200">
-                <tr class="text-gray-500">
-                    <td class="px-6 py-4">11/15/2024</td>
-                    <td class="px-6 py-4">85</td>
-                    <td class="px-6 py-4">Normal performance</td>
-                </tr>
+                @if(cognitiveScores().loading) {
+                    <tr class="text-gray-500">
+                        <td class="px-6 py-4">Loading ...</td>
+                    </tr>
+                } @else if(cognitiveScores().error) {
+                    <tr class="text-gray-500">
+                        <td class="px-6 py-4">Unexpected error</td>
+                    </tr>
+                } @else if(cognitiveScores().data?.length === 0){
+                    <tr class="text-gray-500">
+                        <td class="px-6 py-4">No cognitive scores recorded</td>
+                    </tr>
+                } @else {
+                    @for (cognitiveScore of cognitiveScores().data; track $index) {
+                        <tr class="text-gray-500">
+                            <td class="px-6 py-4">{{ cognitiveScore.assessmentDate | date:'dd/MM/yyyy' }}</td>
+                            <td class="px-6 py-4">{{ cognitiveScore.toolUsed }}</td>
+                            <td class="px-6 py-4"></td>
+                            <td class="px-6 py-4"></td>
+                            <td class="px-6 py-4">
+                                <button
+                                    (click)="openEvaluationDialog(cognitiveScore)"
+                                    class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-gray-700 bg-gray-200 rounded-lg hover:bg-gray-300 hover:text-gray-900 hover:scale-[1.02] transition-all gap-2">
+                                    <app-icon icon="bi-pencil-square" class="w-4 h-4"></app-icon>
+                                    Edit
+                            </button>
+                            </td>
+                        </tr>
+                    }
+
+                }
+
             </tbody>
         </table>
     </div>
+
+    <!-- Predictions -->
+    <div class="bg-white rounded-lg shadow-md p-6 mt-4">
+        <div class="flex justify-between">
+            <h2 class="text-xl font-semibold mb-4">Predictions</h2>
+        </div>
+        @if (predictions().loading) {
+
+        } @else if(predictions().error) {
+
+        } @else {
+            @if(predictions().data?.status === 'error') {
+                <div>An error ocurred when trying to predict the risks based on the current data</div>
+            } @else if(predictions().data?.status === 'processing') {
+                <div>Predictions has not been processed yet, wait a few minutes and refresh</div>
+            } @else {
+                <div class="flex gap-4 items-center justify-center">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4 text-center">
+                            Cognitive Declince Risk
+                        </h3>
+                        
+                        <app-gauge 
+                            [percent]="predictions().data!.predictionData!.cognitive_decline_risk!.probability"
+                            [title]="predictions().data?.predictionData?.cognitive_decline_risk?.risk_level">
+                        </app-gauge>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4 text-center">
+                            Relapse Risk
+                        </h3>
+                        <app-gauge
+                            [percent]="predictions().data!.predictionData!.relapse_risk.probability"
+                            [title]="predictions().data?.predictionData?.relapse_risk?.risk_level">
+                        </app-gauge>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+
 </form>

@@ -1,6 +1,6 @@
 import { AutoMap } from "@automapper/classes";
 import { Transform } from "class-transformer";
-import { IsString } from "class-validator";
+import { IsDate, IsDateString, IsOptional, IsString } from "class-validator";
 import { formatDate } from 'date-fns';
 
 export class PatientDto {
@@ -16,7 +16,7 @@ export class PatientDto {
     dni: string;
 
     @AutoMap()
-    @IsString()
+    @IsDate()
     @Transform((v) =>{
         return new Date(v.value)
     }, { toClassOnly: true })
@@ -30,18 +30,22 @@ export class PatientDto {
     summary: string;
 
     @IsString()
+    @IsOptional()
     @AutoMap()
     aiSummary: string;
 
     @IsString()
+    @IsOptional()
     @AutoMap()
     symptoms: string;
 
     @IsString()
+    @IsOptional()
     @AutoMap()
     aiSymptoms: string;
 
     @IsString()
+    @IsOptional()
     @AutoMap()
     notes: string;
 }

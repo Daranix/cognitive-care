@@ -52,7 +52,7 @@ export class AppointmentDetailsComponent {
     switchMap((id) => this.appointmentService.findAppoinmentById({ id }).pipe(loading())),
     filter((v) => !!v.data),
     tap((v) => Object.assign(this.appointmentData, v.data)),
-    tap((v) => Object.assign(this.appointmentDay, { date: formatDate(v.data!.date, 'yyyy-MM-dd'), time: formatDate(v.data!.date, 'hh:mm') }))
+    tap((v) => Object.assign(this.appointmentDay, { date: formatDate(v.data!.date, 'yyyy-MM-dd'), time: formatDate(v.data!.date, 'HH:mm') }))
   );
 
   readonly appointment = toSignal(this.appointment$, { initialValue: LOADING_INITIAL_VALUE });
@@ -63,7 +63,7 @@ export class AppointmentDetailsComponent {
 
     const data = this.appointmentData as AppointmentDto; // In a real scenario this would be validated
 
-    this.appointmentData.date = parse(`${this.appointmentDay.date} ${this.appointmentDay.time}`, 'yyyy-MM-dd hh:mm', new Date()).toISOString();
+    this.appointmentData.date = parse(`${this.appointmentDay.date} ${this.appointmentDay.time}`, 'yyyy-MM-dd HH:mm', new Date()).toISOString();
 
 
     try {

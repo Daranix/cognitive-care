@@ -62,6 +62,6 @@ Dominios evaluados:
  - Habilidades visuoespaciales.
 Ventajas: Rápida (20-30 minutos) y válida en esquizofrenia.
 
-Ideas: https://claude.ai/chat/fbfcb99f-50af-4e0d-8708-9e5751c6412f
+
 
 Components: https://preline.co/docs/progress.html

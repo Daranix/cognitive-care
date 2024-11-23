@@ -1,0 +1,15 @@
+<div class="relative size-40 w-full">
+    <svg class="size-full rotate-180" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+        <!-- Background Circle (Gauge) -->
+        <circle cx="18" cy="18" r="16" fill="none" class="stroke-current text-gray-200 dark:text-neutral-700" stroke-width="1" stroke-dasharray="50 100" stroke-linecap="round"></circle>
+    
+        <!-- Gauge Progress -->
+        <circle cx="18" cy="18" r="16" fill="none" class="stroke-current" [ngClass]="calculatedStyle()" stroke-width="1.5" [attr.stroke-dasharray]="realPercent() + ' 100'" stroke-linecap="round"></circle>
+    </svg>
+    
+    <!-- Value Text -->
+    <div class="absolute top-9 start-1/2 transform -translate-x-1/2 text-center">
+        <span class="text-3xl font-bold " [ngClass]="calculatedStyle()">{{title()}}</span>
+        <span class="text-sm block" [ngClass]="calculatedStyle()">{{subtitle()}}</span>
+    </div>
+</div>

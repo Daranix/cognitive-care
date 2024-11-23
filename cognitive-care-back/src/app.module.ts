@@ -6,6 +6,8 @@ import { AutomapperModule } from '@automapper/nestjs';
 import { classes } from '@automapper/classes'
 import { AppointmentModule } from './appointment/appointment.module';
 import { LlmModule } from './llm/llm.module';
+import { CognitiveScoresModule } from './cognitive-scores/cognitive-scores.module';
+import { PredictionsModule } from './predictions/predictions.module';
 
 @Module({
   imports: [
@@ -14,7 +16,9 @@ import { LlmModule } from './llm/llm.module';
     }),
     PatientModule,
     AppointmentModule,
-    LlmModule
+    LlmModule,
+    CognitiveScoresModule,
+    PredictionsModule
   ],
   controllers: [AppController],
   providers: [AppService],

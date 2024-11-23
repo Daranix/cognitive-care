@@ -27,7 +27,7 @@ export class AppointmentService {
       }
 
       // Update
-      const [appointment] = await db.update(appointments).set({ ...createAppointmentDto }).returning();
+      const [appointment] = await db.update(appointments).set({ ...createAppointmentDto }).where(eq(appointments.id, createAppointmentDto.id)).returning();
       return appointment;
     }
     

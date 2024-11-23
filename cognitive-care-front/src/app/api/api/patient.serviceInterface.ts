@@ -12,6 +12,7 @@ import { HttpHeaders }                                       from '@angular/comm
 import { Observable }                                        from 'rxjs';
 
 import { AppointmentSmallDto } from '../model/models';
+import { CognitiveScoreDto } from '../model/models';
 import { CreatePatientDto } from '../model/models';
 import { PatientDto } from '../model/models';
 import { PatientSmallDto } from '../model/models';
@@ -25,6 +26,10 @@ export interface CreateOrUpdatePatientRequestParams {
 }
 
 export interface FindAppointmentsRequestParams {
+    patientId: string;
+}
+
+export interface FindCognitiveScoresRequestParams {
     patientId: string;
 }
 
@@ -58,6 +63,13 @@ export interface PatientServiceInterface {
 * @param requestParameters
      */
     findAppointments(requestParameters: FindAppointmentsRequestParams, extraHttpRequestParams?: any): Observable<Array<AppointmentSmallDto>>;
+
+    /**
+     * 
+     * 
+* @param requestParameters
+     */
+    findCognitiveScores(requestParameters: FindCognitiveScoresRequestParams, extraHttpRequestParams?: any): Observable<Array<CognitiveScoreDto>>;
 
     /**
      * 

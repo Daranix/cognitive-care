@@ -15,6 +15,8 @@ import { PatientDto } from './dto/patient.dto';
 import { PatientSmallDto } from './dto/patient-small.dto';
 import { AppointmentService } from 'src/appointment/appointment.service';
 import { AppointmentSmallDto } from 'src/appointment/dto/appointment-small.dto';
+import { CognitiveScoresService } from 'src/cognitive-scores/cognitive-scores.service';
+import { CognitiveScoreDto } from 'src/cognitive-scores/dto/cognitive-score.dto';
 
 @ApiTags('patient')
 @Controller('patient')
@@ -22,7 +24,8 @@ export class PatientController {
 
   constructor(
     private readonly patientService: PatientService,
-    private readonly appointmentService: AppointmentService
+    private readonly appointmentService: AppointmentService,
+    private readonly cognitiveScoresService: CognitiveScoresService
   ) { }
 
   @ApiOperation({
@@ -30,7 +33,7 @@ export class PatientController {
   })
   @Post()
   createOrUpdate(@Body() createPatientDto: CreatePatientDto): Promise<PatientDto> {
-    return this.patientService.create(createPatientDto);
+    return this.patientService.createOrUpdate(createPatientDto);
   }
 
   @ApiOperation({
@@ -72,5 +75,15 @@ export class PatientController {
     @Param('patientId') patientId: string
   ): Promise<AppointmentSmallDto[]> {
     return this.appointmentService.findByPatientId(patientId)
+  }
+
+  @ApiOperation({
+    operationId: 'findCognitiveScores'
+  })
+  @Get(':patientId/cognitive-scores')
+  async findCognitiveScores(
+    @Param('patientId') patientId: string
+  ): Promise<CognitiveScoreDto[]> {
+    return this.cognitiveScoresService.findByPatientId(patientId);
   }
 }
