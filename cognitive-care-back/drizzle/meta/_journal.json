@@ -8,6 +8,48 @@
       "when": 1731786629077,
       "tag": "0000_greedy_miss_america",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1732303310725,
+      "tag": "0001_numerous_sheva_callister",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1732307597579,
+      "tag": "0002_futuristic_mister_fear",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1732308647610,
+      "tag": "0003_steady_grandmaster",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1732310001944,
+      "tag": "0004_yellow_vengeance",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1732312659109,
+      "tag": "0005_tired_thunderbolt",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1732316377461,
+      "tag": "0006_flawless_ted_forrester",
+      "breakpoints": true
     }
   ]
 }

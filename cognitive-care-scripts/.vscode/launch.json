@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debug: Cognitive Care",
+            "type": "debugpy",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/cognitivecare",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": [
+                "--patient-id",
+                "${command:pickArgs}"
+            ]
+        }
+    ]
+}

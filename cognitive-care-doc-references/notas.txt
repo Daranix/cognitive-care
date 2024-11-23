@@ -1,0 +1,67 @@
+--- > Sobre los sintomas leer DSM5 pagina 87
+
+
+Las escalas más utilizadas para la valoración de la psicopatología son la Escala de Síndrome Positivo y Negativo para la Esquizofrenia (PANSS), la Escala Breve de Evaluación Psiquiátrica (BPRS), la Escala de Evaluación de la Actividad Global (EEAG clínica) y la Escala de Impresión Clínica Global (CGI-esquizofrenia).
+
+La PANSS (68) evalúa tres subescalas de psicopatología: síntomas positivos, negativos y generales. La PANSS constituye una escala validada que se creó con objeto de aumentar la rigurosidad en cuanto a establecer medidas tanto de la sintomatología positiva como de la negativa y otras graduaciones de la sintomatología presente en la Esquizofrenia.
+
+Está traducida y validada al castellano por Peralta y Cuesta (69). La escala PANSS permite la clasificación categorial de la sintomatología presente en la Esquizofrenia y otros trastornos psicóticos. Aporta no exclusivamente la presencia y severidad sino también el grado de distorsión que puede ocasionar a la vida del sujeto la intensidad del trastorno mental.
+
+Proporciona una evaluación cuantitativa y clasificatoria de la Esquizofrenia que se obtiene a través de una entrevista semiestructurada, para la existe un manual de entrenamiento realizado por Cuesta y Peralta. Las mediciones surgen sobre información sobre la entrevista, de la conducta observada, así como de la información proporcionada por la familia y los auxiliares.
+
+La evaluación consiste en la suma de los ítems de la escala positiva, negativa, general y también se puede calcular la compuesta a partir de los positivos y negativos, valorando el grado de predominancia existente de un síndrome frente al otro. El análisis factorial pone de manifiesto la existencia de cuatro factores que explican el 52,3% de la variancia total. Los cuatro factores responden a: Sintomatología Positiva, Negativa, Excitación y Depresión (70).
+
+La Escala está formada por 30 ítems. La subescala positiva incluye: delirios, desorganización conceptual, comportamiento alucinatorio, excitación, grandiosidad, suspicacia - perjuicio y hostilidad. La subescala negativa incluye: embotamiento afectivo, retraimiento emocional, contacto pobre, retraimiento social, dificultad pensamiento abstracto, ausencia de espontaneidad y fluidez en la conversación y pensamiento estereotipado. Por último, la subescala general valora: preocupaciones somáticas, ansiedad, sentimientos de culpa, tensión motora, manierismos y posturas, depresión, retardo motor, falta colaboración, inusuales contenidos del pensamiento, desorientación, atención deficiente, ausencia de juicio e introspección, trastorno volición, control deficiente de impulsos, preocupación y evitación social activa.
+
+Cada uno de los 30 ítems valora en una escala de 7 puntos de evaluación, de menor a mayor gravedad.
+
+https://bi.cibersam.es/busqueda-de-instrumentos/ficha?Id=15
+https://bi.cibersam.es/busqueda-de-instrumentos/ficha?Id=499
+
+--- Test para la evaluacion del deterioro cognitivo en pacientes con esquizofrenia
+
+1. MATRICS Consensus Cognitive Battery (MCCB)
+Descripción: Es la herramienta más ampliamente utilizada para evaluar el deterioro cognitivo en la esquizofrenia. Fue desarrollada como parte de la iniciativa MATRICS (Measurement and Treatment Research to Improve Cognition in Schizophrenia).
+Dominios evaluados:
+ - Velocidad de procesamiento.
+ - Atención/vigilancia.
+ - Memoria de trabajo.
+ - Memoria verbal y aprendizaje.
+ - Memoria visual y aprendizaje.
+ - Razonamiento y resolución de problemas.
+ - Cognición social.
+Ventajas: Está estandarizada y es útil tanto en investigación como en práctica clínica.
+
+
+2. Cognitive Assessment Interview (CAI)
+Descripción: Es una entrevista semiestructurada que evalúa el deterioro cognitivo basado en la percepción del paciente y del informante.
+Aspectos evaluados: Memoria, velocidad de procesamiento, atención y funciones ejecutivas.
+Ventajas: Considera la perspectiva subjetiva del paciente y su entorno.
+3. Brief Assessment of Cognition in Schizophrenia (BACS)
+Descripción: Es una prueba breve y fácil de administrar que mide el deterioro cognitivo de manera general.
+Dominios evaluados:
+ - Memoria verbal.
+ - Fluidez verbal.
+ - Velocidad de procesamiento.
+ - Memoria de trabajo.
+ - Razonamiento y resolución de problemas.
+Ventajas: Se administra en menos de 35 minutos y tiene normas bien establecidas.
+
+
+4. Schizophrenia Cognition Rating Scale (SCoRS)
+Descripción: Evalúa el impacto funcional del deterioro cognitivo basado en la información proporcionada por el paciente, un informante y el evaluador.
+Aspectos evaluados: Funciones ejecutivas, memoria y cognición social.
+Ventajas: Considera el deterioro cognitivo en el contexto del funcionamiento diario.
+
+5. Repeatable Battery for the Assessment of Neuropsychological Status (RBANS)
+Descripción: Aunque no está específicamente diseñada para la esquizofrenia, se utiliza ampliamente para evaluar deterioro cognitivo en poblaciones clínicas.
+Dominios evaluados:
+ - Atención.
+ - Lenguaje.
+ - Memoria inmediata y diferida.
+ - Habilidades visuoespaciales.
+Ventajas: Rápida (20-30 minutos) y válida en esquizofrenia.
+
+Ideas: https://claude.ai/chat/fbfcb99f-50af-4e0d-8708-9e5751c6412f
+
+Components: https://preline.co/docs/progress.html

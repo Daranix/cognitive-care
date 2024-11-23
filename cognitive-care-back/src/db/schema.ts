@@ -1,15 +1,17 @@
 import {
     pgTable,
-    serial,
     varchar,
     timestamp,
     text,
-    integer,
     date,
     decimal,
-    uuid
+    uuid,
+    json,
+    jsonb
 } from 'drizzle-orm/pg-core';
 import { relations } from 'drizzle-orm';
+import type { PredictionDataDto } from 'src/predictions/dto/prediction-data.dto';
+import type {  PredictionStatus } from 'src/predictions/dto/prediction.dto';
 
 // Patients table
 export const patients = pgTable('patients', {
@@ -37,29 +39,30 @@ export const appointments = pgTable('appointments', {
     id: uuid('id').primaryKey().defaultRandom(),
     patientId: uuid('patient_id').notNull().references(() => patients.id),
     date: timestamp('date', { mode: 'date' }).notNull(),
-    details: text('details'),
-    createdAt: timestamp('created_at').defaultNow().notNull(),
-    updatedAt: timestamp('updated_at').defaultNow().notNull(),
-});
-
-// Notes table - for general medical notes
-export const notes = pgTable('notes', {
-    id: uuid('id').primaryKey(),
-    patientId: uuid('patient_id').notNull().references(() => patients.id),
-    content: text('content').notNull(),
+    audioFile: varchar('audio_file').unique(),
+    transcription: text('transcription'),
+    notes: text('notes'),
+    transcriptionSummary: text('transcription_summary'),
     createdAt: timestamp('created_at').defaultNow().notNull(),
     updatedAt: timestamp('updated_at').defaultNow().notNull(),
 });
 
 // Cognitive Scores table
 export const cognitiveScores = pgTable('cognitive_scores', {
-    id: uuid('id').primaryKey(),
+    id: uuid('id').primaryKey().defaultRandom(),
     patientId: uuid('patient_id').notNull().references(() => patients.id),
-    score: decimal('score').notNull(),
+    scores: jsonb('scores').$type<Record<string, number>>().notNull(),
+    toolUsed: varchar('tool_used').notNull(),
     observations: text('observations'),
-    assessmentDate: date('assessment_date').notNull(),
+    assessmentDate: date('assessment_date', { mode: 'date' }).notNull(),
     createdAt: timestamp('created_at').defaultNow().notNull(),
     updatedAt: timestamp('updated_at').defaultNow().notNull(),
+});
+
+export const predictions = pgTable('predictions', {
+    patientId: uuid('patient_id').primaryKey().notNull(),
+    predictionData: jsonb('prediction_data').$type<PredictionDataDto>(),
+    status: varchar('status').$type<PredictionStatus>().notNull()
 });
 
 // Relations for appointments
@@ -70,6 +73,13 @@ export const appointmentsRelations = relations(appointments, ({ one }) => ({
     }),
 }));
 
+// Relations for predictions
+export const predictionsRelations = relations(predictions, ({ one }) => ({
+    patient: one(patients, {
+        fields: [predictions.patientId],
+        references: [patients.id]
+    })
+}));
 
 // Relations for cognitive scores
 export const cognitiveScoresRelations = relations(cognitiveScores, ({ one }) => ({

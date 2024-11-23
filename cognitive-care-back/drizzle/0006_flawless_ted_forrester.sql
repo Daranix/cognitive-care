@@ -1,0 +1,1 @@
+ALTER TABLE "predictions" ALTER COLUMN "prediction_data" DROP NOT NULL;
