@@ -1,416 +1,414 @@
 [
   {
     "patient_id": 1,
-    "age": 49,
+    "age": 42,
     "symptoms": [
-      "paranoia",
-      "delusions",
-      "reduced emotional expression"
+      "flat affect",
+      "social withdrawal",
+      "hallucinations"
     ],
     "cognitive_scores": [
-      94,
-      89,
-      84,
-      84,
-      89
+      77,
+      71,
+      72,
+      68,
+      74
     ],
-    "relapsed": true
+    "relapsed": false
   },
   {
     "patient_id": 2,
-    "age": 25,
+    "age": 22,
     "symptoms": [
-      "disorganized speech",
       "thought disorder",
-      "social withdrawal"
+      "hallucinations"
     ],
     "cognitive_scores": [
-      94,
-      88,
-      86,
-      82,
-      87
+      72,
+      67,
+      67,
+      57,
+      64
     ],
-    "relapsed": true
+    "relapsed": false
   },
   {
     "patient_id": 3,
-    "age": 32,
+    "age": 52,
     "symptoms": [
-      "flat affect",
       "reduced emotional expression",
-      "delusions"
+      "delusions",
+      "social withdrawal"
     ],
     "cognitive_scores": [
       90,
-      83,
-      82,
-      78,
-      85
+      86,
+      85,
+      80,
+      81
     ],
     "relapsed": false
   },
   {
     "patient_id": 4,
-    "age": 48,
+    "age": 42,
     "symptoms": [
-      "social withdrawal",
-      "paranoia"
+      "paranoia",
+      "disorganized speech",
+      "social withdrawal"
     ],
     "cognitive_scores": [
-      90,
-      86,
-      81,
-      79,
-      82
+      67,
+      64,
+      60,
+      54,
+      61
     ],
-    "relapsed": true
+    "relapsed": false
   },
   {
     "patient_id": 5,
-    "age": 37,
-    "symptoms": [
-      "thought disorder",
-      "flat affect",
-      "disorganized speech"
-    ],
-    "cognitive_scores": [
-      91,
-      87,
-      86,
-      83,
-      82
-    ],
-    "relapsed": true
-  },
-  {
-    "patient_id": 6,
-    "age": 45,
-    "symptoms": [
-      "reduced emotional expression",
-      "paranoia"
-    ],
-    "cognitive_scores": [
-      87,
-      80,
-      77,
-      73,
-      81
-    ],
-    "relapsed": true
-  },
-  {
-    "patient_id": 7,
-    "age": 39,
-    "symptoms": [
-      "disorganized speech",
-      "social withdrawal",
-      "hallucinations"
-    ],
-    "cognitive_scores": [
-      91,
-      84,
-      81,
-      79,
-      85
-    ],
-    "relapsed": true
-  },
-  {
-    "patient_id": 8,
-    "age": 40,
+    "age": 38,
     "symptoms": [
       "paranoia",
-      "social withdrawal",
-      "disorganized speech"
-    ],
-    "cognitive_scores": [
-      94,
-      91,
-      85,
-      81,
-      91
-    ],
-    "relapsed": true
-  },
-  {
-    "patient_id": 9,
-    "age": 43,
-    "symptoms": [
-      "reduced emotional expression",
-      "flat affect"
+      "disorganized speech",
+      "reduced emotional expression"
     ],
     "cognitive_scores": [
       88,
       85,
-      81,
+      82,
       77,
-      81
+      79
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 6,
+    "age": 55,
+    "symptoms": [
+      "paranoia",
+      "flat affect",
+      "hallucinations"
+    ],
+    "cognitive_scores": [
+      95,
+      89,
+      88,
+      80,
+      92
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 7,
+    "age": 30,
+    "symptoms": [
+      "reduced emotional expression",
+      "disorganized speech"
+    ],
+    "cognitive_scores": [
+      90,
+      86,
+      80,
+      77,
+      86
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 8,
+    "age": 33,
+    "symptoms": [
+      "delusions",
+      "disorganized speech"
+    ],
+    "cognitive_scores": [
+      74,
+      71,
+      66,
+      60,
+      66
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 9,
+    "age": 42,
+    "symptoms": [
+      "thought disorder",
+      "disorganized speech"
+    ],
+    "cognitive_scores": [
+      75,
+      71,
+      70,
+      60,
+      65
     ],
     "relapsed": false
   },
   {
     "patient_id": 10,
-    "age": 34,
+    "age": 50,
     "symptoms": [
-      "social withdrawal",
-      "paranoia"
+      "delusions",
+      "disorganized speech"
     ],
     "cognitive_scores": [
-      85,
-      80,
-      76,
-      76,
-      78
+      91,
+      86,
+      82,
+      81,
+      81
     ],
-    "relapsed": true
+    "relapsed": false
   },
   {
     "patient_id": 11,
-    "age": 64,
+    "age": 31,
     "symptoms": [
-      "social withdrawal",
-      "hallucinations",
-      "flat affect"
+      "thought disorder",
+      "social withdrawal"
     ],
     "cognitive_scores": [
-      94,
-      90,
-      84,
-      86,
-      91
+      88,
+      81,
+      83,
+      80,
+      81
     ],
     "relapsed": false
   },
   {
     "patient_id": 12,
-    "age": 54,
+    "age": 56,
     "symptoms": [
-      "thought disorder",
-      "delusions"
+      "paranoia",
+      "hallucinations",
+      "thought disorder"
     ],
     "cognitive_scores": [
-      88,
-      82,
-      81,
-      80,
-      80
+      72,
+      68,
+      67,
+      63,
+      68
     ],
-    "relapsed": true
+    "relapsed": false
   },
   {
     "patient_id": 13,
-    "age": 44,
+    "age": 38,
     "symptoms": [
-      "disorganized speech",
       "paranoia",
-      "flat affect"
+      "hallucinations"
     ],
     "cognitive_scores": [
-      86,
-      80,
-      81,
-      76,
-      77
+      65,
+      62,
+      55,
+      51,
+      59
     ],
     "relapsed": true
   },
   {
     "patient_id": 14,
-    "age": 52,
+    "age": 44,
     "symptoms": [
       "flat affect",
-      "reduced emotional expression"
+      "disorganized speech",
+      "delusions"
     ],
     "cognitive_scores": [
-      87,
+      92,
+      88,
+      84,
       81,
-      82,
-      75,
-      81
+      87
     ],
-    "relapsed": true
+    "relapsed": false
   },
   {
     "patient_id": 15,
-    "age": 37,
+    "age": 18,
     "symptoms": [
-      "disorganized speech",
-      "reduced emotional expression",
-      "paranoia"
+      "hallucinations",
+      "thought disorder"
     ],
     "cognitive_scores": [
-      91,
-      86,
-      84,
-      78,
-      85
+      70,
+      66,
+      65,
+      56,
+      63
     ],
     "relapsed": false
   },
   {
     "patient_id": 16,
-    "age": 44,
+    "age": 51,
     "symptoms": [
-      "flat affect",
+      "paranoia",
+      "social withdrawal",
       "disorganized speech"
     ],
     "cognitive_scores": [
-      95,
-      88,
-      87,
-      87,
-      92
+      79,
+      73,
+      71,
+      66,
+      72
     ],
     "relapsed": false
   },
   {
     "patient_id": 17,
-    "age": 49,
+    "age": 38,
     "symptoms": [
       "thought disorder",
-      "paranoia",
-      "disorganized speech"
+      "flat affect"
     ],
     "cognitive_scores": [
-      91,
-      84,
-      82,
-      77,
-      84
+      92,
+      89,
+      86,
+      81,
+      87
     ],
     "relapsed": false
   },
   {
     "patient_id": 18,
-    "age": 27,
+    "age": 35,
     "symptoms": [
       "reduced emotional expression",
-      "delusions",
+      "thought disorder",
       "flat affect"
     ],
     "cognitive_scores": [
-      88,
-      81,
-      83,
-      78,
+      65,
+      60,
+      60,
+      55,
+      57
+    ],
+    "relapsed": true
+  },
+  {
+    "patient_id": 19,
+    "age": 41,
+    "symptoms": [
+      "social withdrawal",
+      "disorganized speech",
+      "reduced emotional expression"
+    ],
+    "cognitive_scores": [
+      92,
+      89,
+      84,
+      82,
       83
     ],
     "relapsed": false
   },
   {
-    "patient_id": 19,
-    "age": 37,
+    "patient_id": 20,
+    "age": 33,
     "symptoms": [
-      "social withdrawal",
+      "delusions",
+      "disorganized speech",
       "hallucinations"
     ],
     "cognitive_scores": [
-      95,
-      92,
-      89,
-      83,
-      92
-    ],
-    "relapsed": true
-  },
-  {
-    "patient_id": 20,
-    "age": 29,
-    "symptoms": [
-      "paranoia",
-      "delusions",
-      "social withdrawal"
-    ],
-    "cognitive_scores": [
-      91,
+      93,
       86,
-      84,
-      81,
-      82
+      86,
+      79,
+      87
     ],
     "relapsed": false
   },
   {
     "patient_id": 21,
-    "age": 35,
+    "age": 31,
     "symptoms": [
       "thought disorder",
-      "social withdrawal",
       "disorganized speech"
     ],
     "cognitive_scores": [
-      85,
-      81,
-      76,
       77,
-      80
+      71,
+      71,
+      68,
+      74
     ],
-    "relapsed": true
+    "relapsed": false
   },
   {
     "patient_id": 22,
-    "age": 46,
+    "age": 34,
     "symptoms": [
       "thought disorder",
-      "paranoia",
-      "reduced emotional expression"
+      "flat affect",
+      "disorganized speech"
     ],
     "cognitive_scores": [
       89,
-      85,
       83,
-      78,
-      82
+      80,
+      76,
+      86
     ],
-    "relapsed": true
+    "relapsed": false
   },
   {
     "patient_id": 23,
-    "age": 45,
+    "age": 65,
     "symptoms": [
+      "paranoia",
       "disorganized speech",
-      "delusions"
+      "social withdrawal"
     ],
     "cognitive_scores": [
-      91,
-      85,
-      82,
       76,
-      83
+      69,
+      69,
+      62,
+      67
     ],
     "relapsed": false
   },
   {
     "patient_id": 24,
-    "age": 40,
+    "age": 23,
     "symptoms": [
-      "delusions",
-      "flat affect"
-    ],
-    "cognitive_scores": [
-      90,
-      85,
-      80,
-      75,
-      80
-    ],
-    "relapsed": false
-  },
-  {
-    "patient_id": 25,
-    "age": 26,
-    "symptoms": [
-      "hallucinations",
       "disorganized speech",
       "delusions"
     ],
     "cognitive_scores": [
-      92,
-      88,
+      65,
+      61,
+      58,
+      53,
+      58
+    ],
+    "relapsed": true
+  },
+  {
+    "patient_id": 25,
+    "age": 29,
+    "symptoms": [
+      "hallucinations",
+      "social withdrawal"
+    ],
+    "cognitive_scores": [
       82,
-      83,
-      86
+      79,
+      73,
+      69,
+      73
     ],
     "relapsed": false
   },
@@ -418,1239 +416,1239 @@
     "patient_id": 26,
     "age": 34,
     "symptoms": [
-      "reduced emotional expression",
+      "delusions",
       "paranoia"
     ],
     "cognitive_scores": [
-      85,
-      82,
-      79,
       76,
-      77
+      72,
+      69,
+      63,
+      67
     ],
-    "relapsed": true
+    "relapsed": false
   },
   {
     "patient_id": 27,
-    "age": 41,
+    "age": 18,
     "symptoms": [
-      "flat affect",
-      "social withdrawal"
+      "thought disorder",
+      "hallucinations"
     ],
     "cognitive_scores": [
-      87,
-      84,
-      82,
-      76,
-      80
+      66,
+      60,
+      61,
+      56,
+      57
     ],
     "relapsed": true
   },
   {
     "patient_id": 28,
-    "age": 57,
+    "age": 32,
     "symptoms": [
-      "disorganized speech",
-      "thought disorder",
-      "delusions"
+      "delusions",
+      "social withdrawal"
     ],
     "cognitive_scores": [
-      91,
-      85,
-      86,
-      83,
-      82
+      76,
+      73,
+      70,
+      66,
+      71
     ],
     "relapsed": false
   },
   {
     "patient_id": 29,
-    "age": 31,
+    "age": 37,
     "symptoms": [
-      "thought disorder",
-      "flat affect"
+      "disorganized speech",
+      "reduced emotional expression"
     ],
     "cognitive_scores": [
-      89,
-      84,
+      86,
       80,
-      79,
-      83
+      81,
+      73,
+      81
     ],
-    "relapsed": true
+    "relapsed": false
   },
   {
     "patient_id": 30,
-    "age": 61,
+    "age": 42,
     "symptoms": [
-      "paranoia",
-      "disorganized speech"
+      "flat affect",
+      "reduced emotional expression",
+      "social withdrawal"
     ],
     "cognitive_scores": [
-      85,
-      82,
       78,
-      77,
-      76
+      72,
+      69,
+      69,
+      73
     ],
-    "relapsed": true
+    "relapsed": false
   },
   {
     "patient_id": 31,
-    "age": 21,
+    "age": 32,
     "symptoms": [
-      "thought disorder",
-      "reduced emotional expression",
-      "paranoia"
+      "paranoia",
+      "hallucinations",
+      "delusions"
     ],
     "cognitive_scores": [
-      90,
-      87,
-      83,
+      80,
       76,
-      84
+      70,
+      70,
+      76
     ],
     "relapsed": false
   },
   {
     "patient_id": 32,
-    "age": 24,
+    "age": 49,
     "symptoms": [
-      "paranoia",
-      "hallucinations"
+      "social withdrawal",
+      "reduced emotional expression"
     ],
     "cognitive_scores": [
-      91,
-      84,
-      81,
-      81,
-      84
+      95,
+      89,
+      87,
+      87,
+      89
     ],
     "relapsed": false
   },
   {
     "patient_id": 33,
-    "age": 38,
+    "age": 39,
     "symptoms": [
       "social withdrawal",
-      "disorganized speech"
+      "reduced emotional expression"
     ],
     "cognitive_scores": [
-      88,
-      81,
-      81,
-      80,
-      85
+      66,
+      62,
+      59,
+      55,
+      56
     ],
     "relapsed": true
   },
   {
     "patient_id": 34,
-    "age": 36,
+    "age": 59,
     "symptoms": [
-      "reduced emotional expression",
+      "delusions",
+      "thought disorder",
       "hallucinations"
     ],
     "cognitive_scores": [
-      90,
       85,
       81,
-      81,
-      85
+      78,
+      77,
+      75
     ],
-    "relapsed": true
+    "relapsed": false
   },
   {
     "patient_id": 35,
-    "age": 29,
+    "age": 38,
     "symptoms": [
-      "delusions",
-      "reduced emotional expression",
-      "social withdrawal"
+      "paranoia",
+      "hallucinations"
     ],
     "cognitive_scores": [
-      90,
-      87,
-      81,
-      82,
-      84
+      95,
+      88,
+      88,
+      86,
+      92
     ],
     "relapsed": false
   },
   {
     "patient_id": 36,
-    "age": 52,
+    "age": 53,
     "symptoms": [
-      "paranoia",
-      "delusions",
-      "disorganized speech"
+      "disorganized speech",
+      "thought disorder",
+      "flat affect"
     ],
     "cognitive_scores": [
-      90,
-      84,
-      85,
-      81,
-      85
+      73,
+      66,
+      66,
+      60,
+      70
     ],
-    "relapsed": true
+    "relapsed": false
   },
   {
     "patient_id": 37,
-    "age": 52,
+    "age": 30,
     "symptoms": [
-      "reduced emotional expression",
-      "paranoia",
-      "delusions"
+      "delusions",
+      "flat affect"
     ],
     "cognitive_scores": [
-      90,
-      85,
-      82,
-      79,
-      85
+      67,
+      60,
+      57,
+      55,
+      64
     ],
-    "relapsed": true
+    "relapsed": false
   },
   {
     "patient_id": 38,
-    "age": 57,
+    "age": 38,
     "symptoms": [
-      "disorganized speech",
-      "paranoia",
-      "thought disorder"
+      "flat affect",
+      "delusions"
     ],
     "cognitive_scores": [
-      89,
-      86,
-      80,
-      74,
-      85
+      72,
+      67,
+      63,
+      57,
+      67
     ],
     "relapsed": false
   },
   {
     "patient_id": 39,
-    "age": 52,
+    "age": 34,
     "symptoms": [
-      "social withdrawal",
-      "disorganized speech",
-      "reduced emotional expression"
+      "thought disorder",
+      "delusions"
     ],
     "cognitive_scores": [
-      87,
-      83,
-      82,
-      76,
-      83
+      88,
+      81,
+      80,
+      77,
+      78
     ],
-    "relapsed": true
+    "relapsed": false
   },
   {
     "patient_id": 40,
-    "age": 40,
+    "age": 54,
     "symptoms": [
       "paranoia",
-      "flat affect",
-      "delusions"
+      "thought disorder",
+      "reduced emotional expression"
     ],
     "cognitive_scores": [
-      86,
+      91,
+      88,
       81,
-      76,
-      72,
-      83
+      79,
+      81
     ],
-    "relapsed": true
+    "relapsed": false
   },
   {
     "patient_id": 41,
-    "age": 36,
+    "age": 50,
     "symptoms": [
-      "hallucinations",
-      "reduced emotional expression",
-      "disorganized speech"
+      "thought disorder",
+      "hallucinations"
     ],
     "cognitive_scores": [
-      94,
-      90,
-      85,
-      80,
-      84
+      72,
+      66,
+      64,
+      60,
+      68
     ],
-    "relapsed": true
+    "relapsed": false
   },
   {
     "patient_id": 42,
-    "age": 55,
-    "symptoms": [
-      "disorganized speech",
-      "hallucinations",
-      "reduced emotional expression"
-    ],
-    "cognitive_scores": [
-      94,
-      91,
-      85,
-      84,
-      91
-    ],
-    "relapsed": false
-  },
-  {
-    "patient_id": 43,
-    "age": 33,
-    "symptoms": [
-      "flat affect",
-      "hallucinations",
-      "reduced emotional expression"
-    ],
-    "cognitive_scores": [
-      85,
-      81,
-      79,
-      70,
-      76
-    ],
-    "relapsed": true
-  },
-  {
-    "patient_id": 44,
-    "age": 37,
-    "symptoms": [
-      "flat affect",
-      "delusions"
-    ],
-    "cognitive_scores": [
-      88,
-      81,
-      82,
-      78,
-      82
-    ],
-    "relapsed": true
-  },
-  {
-    "patient_id": 45,
-    "age": 27,
-    "symptoms": [
-      "reduced emotional expression",
-      "social withdrawal"
-    ],
-    "cognitive_scores": [
-      88,
-      85,
-      82,
-      79,
-      81
-    ],
-    "relapsed": false
-  },
-  {
-    "patient_id": 46,
-    "age": 41,
-    "symptoms": [
-      "paranoia",
-      "hallucinations"
-    ],
-    "cognitive_scores": [
-      94,
-      88,
-      85,
-      85,
-      84
-    ],
-    "relapsed": true
-  },
-  {
-    "patient_id": 47,
-    "age": 32,
-    "symptoms": [
-      "hallucinations",
-      "disorganized speech",
-      "reduced emotional expression"
-    ],
-    "cognitive_scores": [
-      85,
-      80,
-      75,
-      73,
-      78
-    ],
-    "relapsed": true
-  },
-  {
-    "patient_id": 48,
-    "age": 44,
-    "symptoms": [
-      "reduced emotional expression",
-      "thought disorder"
-    ],
-    "cognitive_scores": [
-      90,
-      86,
-      81,
-      75,
-      81
-    ],
-    "relapsed": false
-  },
-  {
-    "patient_id": 49,
-    "age": 34,
-    "symptoms": [
-      "flat affect",
-      "reduced emotional expression"
-    ],
-    "cognitive_scores": [
-      93,
-      89,
-      86,
-      80,
-      87
-    ],
-    "relapsed": true
-  },
-  {
-    "patient_id": 50,
-    "age": 37,
-    "symptoms": [
-      "paranoia",
-      "reduced emotional expression"
-    ],
-    "cognitive_scores": [
-      95,
-      92,
-      86,
-      84,
-      89
-    ],
-    "relapsed": false
-  },
-  {
-    "patient_id": 51,
-    "age": 48,
-    "symptoms": [
-      "social withdrawal",
-      "reduced emotional expression",
-      "paranoia"
-    ],
-    "cognitive_scores": [
-      92,
-      87,
-      85,
-      84,
-      88
-    ],
-    "relapsed": false
-  },
-  {
-    "patient_id": 52,
-    "age": 49,
-    "symptoms": [
-      "delusions",
-      "disorganized speech",
-      "thought disorder"
-    ],
-    "cognitive_scores": [
-      94,
-      87,
-      87,
-      79,
-      91
-    ],
-    "relapsed": false
-  },
-  {
-    "patient_id": 53,
     "age": 43,
     "symptoms": [
       "disorganized speech",
-      "flat affect",
+      "reduced emotional expression",
       "hallucinations"
     ],
     "cognitive_scores": [
-      88,
-      85,
-      79,
-      76,
-      80
-    ],
-    "relapsed": false
-  },
-  {
-    "patient_id": 54,
-    "age": 45,
-    "symptoms": [
-      "disorganized speech",
-      "reduced emotional expression"
-    ],
-    "cognitive_scores": [
-      92,
-      88,
-      83,
-      81,
-      85
-    ],
-    "relapsed": true
-  },
-  {
-    "patient_id": 55,
-    "age": 30,
-    "symptoms": [
-      "reduced emotional expression",
-      "social withdrawal",
-      "disorganized speech"
-    ],
-    "cognitive_scores": [
-      93,
-      90,
-      86,
-      79,
-      86
-    ],
-    "relapsed": false
-  },
-  {
-    "patient_id": 56,
-    "age": 20,
-    "symptoms": [
-      "disorganized speech",
-      "flat affect",
-      "social withdrawal"
-    ],
-    "cognitive_scores": [
-      89,
-      85,
-      84,
-      74,
-      82
-    ],
-    "relapsed": true
-  },
-  {
-    "patient_id": 57,
-    "age": 47,
-    "symptoms": [
-      "paranoia",
-      "disorganized speech",
-      "flat affect"
-    ],
-    "cognitive_scores": [
-      88,
-      82,
-      81,
-      73,
-      79
-    ],
-    "relapsed": false
-  },
-  {
-    "patient_id": 58,
-    "age": 55,
-    "symptoms": [
-      "flat affect",
-      "paranoia",
-      "social withdrawal"
-    ],
-    "cognitive_scores": [
-      89,
-      83,
       80,
-      78,
-      82
-    ],
-    "relapsed": true
-  },
-  {
-    "patient_id": 59,
-    "age": 47,
-    "symptoms": [
-      "delusions",
-      "paranoia"
-    ],
-    "cognitive_scores": [
-      87,
-      83,
-      82,
-      75,
-      81
-    ],
-    "relapsed": true
-  },
-  {
-    "patient_id": 60,
-    "age": 31,
-    "symptoms": [
-      "thought disorder",
-      "disorganized speech",
-      "delusions"
-    ],
-    "cognitive_scores": [
-      94,
-      90,
-      89,
-      79,
-      89
-    ],
-    "relapsed": true
-  },
-  {
-    "patient_id": 61,
-    "age": 40,
-    "symptoms": [
-      "delusions",
-      "social withdrawal"
-    ],
-    "cognitive_scores": [
-      90,
-      85,
-      80,
-      79,
-      83
-    ],
-    "relapsed": true
-  },
-  {
-    "patient_id": 62,
-    "age": 44,
-    "symptoms": [
-      "thought disorder",
-      "flat affect"
-    ],
-    "cognitive_scores": [
-      89,
-      83,
-      82,
       77,
-      86
-    ],
-    "relapsed": true
-  },
-  {
-    "patient_id": 63,
-    "age": 31,
-    "symptoms": [
-      "thought disorder",
-      "hallucinations"
-    ],
-    "cognitive_scores": [
-      85,
-      80,
-      80,
-      73,
-      76
-    ],
-    "relapsed": true
-  },
-  {
-    "patient_id": 64,
-    "age": 39,
-    "symptoms": [
-      "social withdrawal",
-      "delusions",
-      "flat affect"
-    ],
-    "cognitive_scores": [
-      93,
-      87,
-      88,
-      81,
-      85
-    ],
-    "relapsed": true
-  },
-  {
-    "patient_id": 65,
-    "age": 35,
-    "symptoms": [
-      "thought disorder",
-      "reduced emotional expression"
-    ],
-    "cognitive_scores": [
-      94,
-      90,
-      88,
-      80,
-      89
-    ],
-    "relapsed": true
-  },
-  {
-    "patient_id": 66,
-    "age": 22,
-    "symptoms": [
-      "reduced emotional expression",
-      "flat affect",
-      "social withdrawal"
-    ],
-    "cognitive_scores": [
-      93,
-      90,
-      87,
-      82,
-      89
-    ],
-    "relapsed": true
-  },
-  {
-    "patient_id": 67,
-    "age": 38,
-    "symptoms": [
-      "flat affect",
-      "reduced emotional expression"
-    ],
-    "cognitive_scores": [
-      89,
-      85,
-      83,
-      74,
-      84
-    ],
-    "relapsed": true
-  },
-  {
-    "patient_id": 68,
-    "age": 42,
-    "symptoms": [
-      "thought disorder",
-      "hallucinations"
-    ],
-    "cognitive_scores": [
-      89,
-      85,
-      81,
-      80,
-      81
-    ],
-    "relapsed": true
-  },
-  {
-    "patient_id": 69,
-    "age": 37,
-    "symptoms": [
-      "flat affect",
-      "thought disorder"
-    ],
-    "cognitive_scores": [
-      93,
-      87,
-      86,
-      84,
-      90
-    ],
-    "relapsed": true
-  },
-  {
-    "patient_id": 70,
-    "age": 48,
-    "symptoms": [
-      "delusions",
-      "flat affect"
-    ],
-    "cognitive_scores": [
-      93,
-      89,
-      86,
-      83,
-      84
-    ],
-    "relapsed": true
-  },
-  {
-    "patient_id": 71,
-    "age": 57,
-    "symptoms": [
-      "delusions",
-      "social withdrawal"
-    ],
-    "cognitive_scores": [
-      91,
-      86,
-      83,
-      77,
-      85
-    ],
-    "relapsed": false
-  },
-  {
-    "patient_id": 72,
-    "age": 38,
-    "symptoms": [
-      "paranoia",
-      "disorganized speech",
-      "delusions"
-    ],
-    "cognitive_scores": [
-      94,
-      89,
-      86,
-      84,
-      91
-    ],
-    "relapsed": false
-  },
-  {
-    "patient_id": 73,
-    "age": 37,
-    "symptoms": [
-      "thought disorder",
-      "reduced emotional expression",
-      "social withdrawal"
-    ],
-    "cognitive_scores": [
-      94,
-      90,
-      86,
-      80,
-      87
-    ],
-    "relapsed": false
-  },
-  {
-    "patient_id": 74,
-    "age": 37,
-    "symptoms": [
-      "flat affect",
-      "social withdrawal",
-      "paranoia"
-    ],
-    "cognitive_scores": [
-      95,
-      91,
-      88,
-      83,
-      92
-    ],
-    "relapsed": true
-  },
-  {
-    "patient_id": 75,
-    "age": 47,
-    "symptoms": [
-      "paranoia",
-      "flat affect"
-    ],
-    "cognitive_scores": [
-      89,
-      83,
-      83,
-      74,
-      86
-    ],
-    "relapsed": true
-  },
-  {
-    "patient_id": 76,
-    "age": 43,
-    "symptoms": [
-      "thought disorder",
-      "delusions"
-    ],
-    "cognitive_scores": [
-      86,
-      81,
-      78,
-      75,
-      79
-    ],
-    "relapsed": false
-  },
-  {
-    "patient_id": 77,
-    "age": 48,
-    "symptoms": [
-      "paranoia",
-      "disorganized speech",
-      "social withdrawal"
-    ],
-    "cognitive_scores": [
-      87,
-      83,
-      81,
-      79,
-      83
-    ],
-    "relapsed": true
-  },
-  {
-    "patient_id": 78,
-    "age": 57,
-    "symptoms": [
-      "hallucinations",
-      "reduced emotional expression"
-    ],
-    "cognitive_scores": [
-      90,
-      85,
-      82,
-      80,
-      81
-    ],
-    "relapsed": true
-  },
-  {
-    "patient_id": 79,
-    "age": 43,
-    "symptoms": [
-      "hallucinations",
-      "delusions",
-      "thought disorder"
-    ],
-    "cognitive_scores": [
-      85,
-      79,
-      79,
-      73,
-      75
-    ],
-    "relapsed": true
-  },
-  {
-    "patient_id": 80,
-    "age": 47,
-    "symptoms": [
-      "paranoia",
-      "disorganized speech",
-      "hallucinations"
-    ],
-    "cognitive_scores": [
-      92,
-      89,
-      82,
-      77,
-      83
-    ],
-    "relapsed": false
-  },
-  {
-    "patient_id": 81,
-    "age": 43,
-    "symptoms": [
-      "hallucinations",
-      "social withdrawal",
-      "disorganized speech"
-    ],
-    "cognitive_scores": [
-      87,
-      83,
-      81,
       72,
-      81
-    ],
-    "relapsed": true
-  },
-  {
-    "patient_id": 82,
-    "age": 30,
-    "symptoms": [
-      "thought disorder",
-      "social withdrawal",
-      "delusions"
-    ],
-    "cognitive_scores": [
-      85,
-      81,
-      80,
-      75,
-      78
-    ],
-    "relapsed": true
-  },
-  {
-    "patient_id": 83,
-    "age": 53,
-    "symptoms": [
-      "flat affect",
-      "reduced emotional expression"
-    ],
-    "cognitive_scores": [
-      95,
-      89,
-      89,
-      87,
-      92
-    ],
-    "relapsed": true
-  },
-  {
-    "patient_id": 84,
-    "age": 18,
-    "symptoms": [
-      "delusions",
-      "reduced emotional expression",
-      "hallucinations"
-    ],
-    "cognitive_scores": [
-      88,
-      81,
-      83,
-      74,
-      81
-    ],
-    "relapsed": false
-  },
-  {
-    "patient_id": 85,
-    "age": 30,
-    "symptoms": [
-      "hallucinations",
-      "reduced emotional expression",
-      "delusions"
-    ],
-    "cognitive_scores": [
-      95,
-      90,
-      90,
-      82,
-      91
-    ],
-    "relapsed": false
-  },
-  {
-    "patient_id": 86,
-    "age": 35,
-    "symptoms": [
-      "social withdrawal",
-      "delusions"
-    ],
-    "cognitive_scores": [
-      93,
-      90,
-      84,
-      78,
-      83
-    ],
-    "relapsed": false
-  },
-  {
-    "patient_id": 87,
-    "age": 37,
-    "symptoms": [
-      "delusions",
-      "hallucinations"
-    ],
-    "cognitive_scores": [
-      94,
-      91,
-      87,
-      83,
-      91
-    ],
-    "relapsed": false
-  },
-  {
-    "patient_id": 88,
-    "age": 48,
-    "symptoms": [
-      "disorganized speech",
-      "reduced emotional expression",
-      "delusions"
-    ],
-    "cognitive_scores": [
-      90,
-      87,
-      80,
-      79,
-      80
-    ],
-    "relapsed": false
-  },
-  {
-    "patient_id": 89,
-    "age": 60,
-    "symptoms": [
-      "social withdrawal",
-      "paranoia",
-      "disorganized speech"
-    ],
-    "cognitive_scores": [
-      88,
-      81,
-      78,
-      78,
-      78
-    ],
-    "relapsed": false
-  },
-  {
-    "patient_id": 90,
-    "age": 47,
-    "symptoms": [
-      "social withdrawal",
-      "delusions"
-    ],
-    "cognitive_scores": [
-      93,
-      87,
-      86,
-      83,
-      84
-    ],
-    "relapsed": true
-  },
-  {
-    "patient_id": 91,
-    "age": 34,
-    "symptoms": [
-      "reduced emotional expression",
-      "thought disorder"
-    ],
-    "cognitive_scores": [
-      87,
-      83,
-      77,
-      73,
-      83
-    ],
-    "relapsed": false
-  },
-  {
-    "patient_id": 92,
-    "age": 49,
-    "symptoms": [
-      "thought disorder",
-      "social withdrawal",
-      "hallucinations"
-    ],
-    "cognitive_scores": [
-      95,
-      92,
-      90,
-      83,
-      85
-    ],
-    "relapsed": false
-  },
-  {
-    "patient_id": 93,
-    "age": 52,
-    "symptoms": [
-      "flat affect",
-      "reduced emotional expression"
-    ],
-    "cognitive_scores": [
-      85,
-      78,
-      77,
-      77,
-      80
-    ],
-    "relapsed": false
-  },
-  {
-    "patient_id": 94,
-    "age": 37,
-    "symptoms": [
-      "hallucinations",
-      "disorganized speech",
-      "thought disorder"
-    ],
-    "cognitive_scores": [
-      93,
-      88,
-      86,
-      80,
-      89
-    ],
-    "relapsed": true
-  },
-  {
-    "patient_id": 95,
-    "age": 49,
-    "symptoms": [
-      "flat affect",
-      "paranoia"
-    ],
-    "cognitive_scores": [
-      87,
-      83,
-      81,
-      75,
+      68,
       77
     ],
     "relapsed": false
   },
   {
-    "patient_id": 96,
-    "age": 31,
+    "patient_id": 43,
+    "age": 29,
+    "symptoms": [
+      "reduced emotional expression",
+      "flat affect",
+      "paranoia"
+    ],
+    "cognitive_scores": [
+      66,
+      59,
+      59,
+      51,
+      62
+    ],
+    "relapsed": true
+  },
+  {
+    "patient_id": 44,
+    "age": 43,
     "symptoms": [
       "thought disorder",
-      "paranoia",
-      "reduced emotional expression"
+      "disorganized speech",
+      "flat affect"
+    ],
+    "cognitive_scores": [
+      83,
+      80,
+      73,
+      69,
+      77
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 45,
+    "age": 41,
+    "symptoms": [
+      "reduced emotional expression",
+      "paranoia"
+    ],
+    "cognitive_scores": [
+      72,
+      66,
+      66,
+      62,
+      62
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 46,
+    "age": 25,
+    "symptoms": [
+      "flat affect",
+      "reduced emotional expression",
+      "thought disorder"
+    ],
+    "cognitive_scores": [
+      68,
+      65,
+      62,
+      53,
+      61
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 47,
+    "age": 34,
+    "symptoms": [
+      "thought disorder",
+      "reduced emotional expression",
+      "hallucinations"
     ],
     "cognitive_scores": [
       92,
       85,
       87,
-      84,
-      88
+      79,
+      87
     ],
     "relapsed": false
   },
   {
-    "patient_id": 97,
-    "age": 41,
+    "patient_id": 48,
+    "age": 32,
     "symptoms": [
-      "hallucinations",
-      "social withdrawal"
+      "disorganized speech",
+      "thought disorder",
+      "delusions"
     ],
     "cognitive_scores": [
-      92,
-      85,
-      82,
-      82,
-      85
+      88,
+      84,
+      81,
+      78,
+      78
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 49,
+    "age": 48,
+    "symptoms": [
+      "reduced emotional expression",
+      "hallucinations"
+    ],
+    "cognitive_scores": [
+      65,
+      58,
+      59,
+      55,
+      60
     ],
     "relapsed": true
   },
   {
-    "patient_id": 98,
+    "patient_id": 50,
+    "age": 32,
+    "symptoms": [
+      "flat affect",
+      "disorganized speech",
+      "delusions"
+    ],
+    "cognitive_scores": [
+      91,
+      87,
+      81,
+      80,
+      85
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 51,
+    "age": 40,
+    "symptoms": [
+      "flat affect",
+      "paranoia"
+    ],
+    "cognitive_scores": [
+      87,
+      82,
+      77,
+      74,
+      79
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 52,
+    "age": 38,
+    "symptoms": [
+      "flat affect",
+      "reduced emotional expression",
+      "paranoia"
+    ],
+    "cognitive_scores": [
+      78,
+      71,
+      71,
+      65,
+      72
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 53,
+    "age": 23,
+    "symptoms": [
+      "social withdrawal",
+      "delusions",
+      "flat affect"
+    ],
+    "cognitive_scores": [
+      68,
+      64,
+      59,
+      58,
+      58
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 54,
+    "age": 26,
+    "symptoms": [
+      "flat affect",
+      "disorganized speech"
+    ],
+    "cognitive_scores": [
+      70,
+      67,
+      65,
+      60,
+      67
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 55,
+    "age": 46,
+    "symptoms": [
+      "thought disorder",
+      "paranoia"
+    ],
+    "cognitive_scores": [
+      74,
+      71,
+      64,
+      59,
+      67
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 56,
+    "age": 30,
+    "symptoms": [
+      "hallucinations",
+      "disorganized speech",
+      "delusions"
+    ],
+    "cognitive_scores": [
+      67,
+      63,
+      57,
+      57,
+      61
+    ],
+    "relapsed": true
+  },
+  {
+    "patient_id": 57,
+    "age": 34,
+    "symptoms": [
+      "paranoia",
+      "hallucinations",
+      "delusions"
+    ],
+    "cognitive_scores": [
+      95,
+      89,
+      86,
+      83,
+      86
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 58,
+    "age": 49,
+    "symptoms": [
+      "disorganized speech",
+      "social withdrawal",
+      "delusions"
+    ],
+    "cognitive_scores": [
+      67,
+      60,
+      61,
+      56,
+      62
+    ],
+    "relapsed": true
+  },
+  {
+    "patient_id": 59,
     "age": 39,
+    "symptoms": [
+      "paranoia",
+      "delusions"
+    ],
+    "cognitive_scores": [
+      90,
+      86,
+      83,
+      80,
+      80
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 60,
+    "age": 45,
+    "symptoms": [
+      "hallucinations",
+      "paranoia",
+      "thought disorder"
+    ],
+    "cognitive_scores": [
+      93,
+      90,
+      85,
+      82,
+      87
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 61,
+    "age": 45,
+    "symptoms": [
+      "hallucinations",
+      "flat affect",
+      "reduced emotional expression"
+    ],
+    "cognitive_scores": [
+      90,
+      85,
+      85,
+      75,
+      83
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 62,
+    "age": 31,
+    "symptoms": [
+      "thought disorder",
+      "flat affect",
+      "social withdrawal"
+    ],
+    "cognitive_scores": [
+      68,
+      61,
+      59,
+      55,
+      61
+    ],
+    "relapsed": true
+  },
+  {
+    "patient_id": 63,
+    "age": 56,
+    "symptoms": [
+      "thought disorder",
+      "flat affect",
+      "hallucinations"
+    ],
+    "cognitive_scores": [
+      89,
+      83,
+      81,
+      78,
+      84
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 64,
+    "age": 44,
+    "symptoms": [
+      "hallucinations",
+      "thought disorder",
+      "reduced emotional expression"
+    ],
+    "cognitive_scores": [
+      70,
+      65,
+      62,
+      55,
+      61
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 65,
+    "age": 51,
+    "symptoms": [
+      "disorganized speech",
+      "flat affect"
+    ],
+    "cognitive_scores": [
+      74,
+      67,
+      69,
+      60,
+      68
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 66,
+    "age": 25,
+    "symptoms": [
+      "flat affect",
+      "reduced emotional expression",
+      "thought disorder"
+    ],
+    "cognitive_scores": [
+      79,
+      73,
+      71,
+      69,
+      71
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 67,
+    "age": 27,
+    "symptoms": [
+      "hallucinations",
+      "flat affect"
+    ],
+    "cognitive_scores": [
+      82,
+      76,
+      72,
+      69,
+      78
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 68,
+    "age": 34,
+    "symptoms": [
+      "flat affect",
+      "thought disorder"
+    ],
+    "cognitive_scores": [
+      79,
+      74,
+      74,
+      69,
+      76
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 69,
+    "age": 50,
     "symptoms": [
       "social withdrawal",
       "thought disorder"
     ],
     "cognitive_scores": [
-      88,
-      83,
-      79,
-      74,
-      80
+      77,
+      70,
+      70,
+      68,
+      71
     ],
-    "relapsed": true
+    "relapsed": false
   },
   {
-    "patient_id": 99,
-    "age": 48,
+    "patient_id": 70,
+    "age": 24,
     "symptoms": [
-      "delusions",
-      "hallucinations",
-      "thought disorder"
+      "thought disorder",
+      "flat affect",
+      "paranoia"
     ],
     "cognitive_scores": [
-      94,
-      90,
-      85,
-      82,
-      89
+      75,
+      68,
+      70,
+      65,
+      70
     ],
-    "relapsed": true
+    "relapsed": false
   },
   {
-    "patient_id": 100,
-    "age": 36,
+    "patient_id": 71,
+    "age": 43,
     "symptoms": [
-      "paranoia",
+      "thought disorder",
+      "delusions",
+      "flat affect"
+    ],
+    "cognitive_scores": [
+      70,
+      64,
+      65,
+      62,
+      67
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 72,
+    "age": 24,
+    "symptoms": [
+      "delusions",
+      "hallucinations"
+    ],
+    "cognitive_scores": [
+      78,
+      75,
+      71,
+      66,
+      70
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 73,
+    "age": 30,
+    "symptoms": [
+      "flat affect",
+      "social withdrawal",
+      "hallucinations"
+    ],
+    "cognitive_scores": [
+      69,
+      65,
+      59,
+      60,
+      62
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 74,
+    "age": 34,
+    "symptoms": [
+      "social withdrawal",
+      "flat affect",
+      "reduced emotional expression"
+    ],
+    "cognitive_scores": [
+      93,
+      89,
+      85,
+      85,
+      89
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 75,
+    "age": 33,
+    "symptoms": [
+      "disorganized speech",
+      "flat affect"
+    ],
+    "cognitive_scores": [
+      95,
+      91,
+      85,
+      83,
+      89
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 76,
+    "age": 35,
+    "symptoms": [
+      "social withdrawal",
+      "paranoia"
+    ],
+    "cognitive_scores": [
+      91,
+      87,
+      81,
+      82,
+      85
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 77,
+    "age": 51,
+    "symptoms": [
+      "reduced emotional expression",
+      "delusions"
+    ],
+    "cognitive_scores": [
+      95,
+      89,
+      88,
+      84,
+      85
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 78,
+    "age": 22,
+    "symptoms": [
+      "delusions",
       "hallucinations",
       "social withdrawal"
     ],
     "cognitive_scores": [
+      91,
+      86,
+      82,
+      82,
+      87
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 79,
+    "age": 18,
+    "symptoms": [
+      "hallucinations",
+      "delusions",
+      "disorganized speech"
+    ],
+    "cognitive_scores": [
+      95,
       92,
-      89,
+      86,
       83,
+      92
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 80,
+    "age": 47,
+    "symptoms": [
+      "thought disorder",
+      "hallucinations",
+      "disorganized speech"
+    ],
+    "cognitive_scores": [
+      75,
+      71,
+      70,
+      63,
+      65
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 81,
+    "age": 31,
+    "symptoms": [
+      "flat affect",
+      "social withdrawal",
+      "paranoia"
+    ],
+    "cognitive_scores": [
+      89,
+      85,
       79,
-      85
+      76,
+      84
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 82,
+    "age": 20,
+    "symptoms": [
+      "disorganized speech",
+      "delusions"
+    ],
+    "cognitive_scores": [
+      88,
+      81,
+      79,
+      80,
+      83
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 83,
+    "age": 33,
+    "symptoms": [
+      "social withdrawal",
+      "hallucinations"
+    ],
+    "cognitive_scores": [
+      74,
+      70,
+      69,
+      65,
+      70
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 84,
+    "age": 29,
+    "symptoms": [
+      "delusions",
+      "paranoia"
+    ],
+    "cognitive_scores": [
+      85,
+      78,
+      77,
+      73,
+      78
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 85,
+    "age": 43,
+    "symptoms": [
+      "paranoia",
+      "social withdrawal",
+      "hallucinations"
+    ],
+    "cognitive_scores": [
+      78,
+      74,
+      71,
+      67,
+      68
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 86,
+    "age": 52,
+    "symptoms": [
+      "delusions",
+      "disorganized speech",
+      "thought disorder"
+    ],
+    "cognitive_scores": [
+      82,
+      76,
+      75,
+      68,
+      79
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 87,
+    "age": 30,
+    "symptoms": [
+      "reduced emotional expression",
+      "social withdrawal",
+      "paranoia"
+    ],
+    "cognitive_scores": [
+      83,
+      80,
+      75,
+      68,
+      78
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 88,
+    "age": 28,
+    "symptoms": [
+      "hallucinations",
+      "delusions"
+    ],
+    "cognitive_scores": [
+      84,
+      81,
+      77,
+      72,
+      78
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 89,
+    "age": 47,
+    "symptoms": [
+      "flat affect",
+      "reduced emotional expression"
+    ],
+    "cognitive_scores": [
+      74,
+      67,
+      67,
+      61,
+      65
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 90,
+    "age": 48,
+    "symptoms": [
+      "paranoia",
+      "thought disorder"
+    ],
+    "cognitive_scores": [
+      78,
+      71,
+      70,
+      67,
+      69
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 91,
+    "age": 40,
+    "symptoms": [
+      "hallucinations",
+      "social withdrawal"
+    ],
+    "cognitive_scores": [
+      78,
+      73,
+      71,
+      64,
+      75
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 92,
+    "age": 43,
+    "symptoms": [
+      "hallucinations",
+      "social withdrawal",
+      "disorganized speech"
+    ],
+    "cognitive_scores": [
+      86,
+      79,
+      78,
+      74,
+      83
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 93,
+    "age": 36,
+    "symptoms": [
+      "flat affect",
+      "delusions",
+      "thought disorder"
+    ],
+    "cognitive_scores": [
+      71,
+      68,
+      64,
+      56,
+      67
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 94,
+    "age": 44,
+    "symptoms": [
+      "flat affect",
+      "social withdrawal"
+    ],
+    "cognitive_scores": [
+      95,
+      90,
+      88,
+      81,
+      86
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 95,
+    "age": 59,
+    "symptoms": [
+      "flat affect",
+      "hallucinations"
+    ],
+    "cognitive_scores": [
+      93,
+      90,
+      85,
+      83,
+      86
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 96,
+    "age": 47,
+    "symptoms": [
+      "delusions",
+      "hallucinations",
+      "social withdrawal"
+    ],
+    "cognitive_scores": [
+      67,
+      64,
+      62,
+      53,
+      61
     ],
     "relapsed": true
+  },
+  {
+    "patient_id": 97,
+    "age": 40,
+    "symptoms": [
+      "social withdrawal",
+      "flat affect",
+      "hallucinations"
+    ],
+    "cognitive_scores": [
+      65,
+      60,
+      55,
+      52,
+      56
+    ],
+    "relapsed": true
+  },
+  {
+    "patient_id": 98,
+    "age": 53,
+    "symptoms": [
+      "hallucinations",
+      "social withdrawal",
+      "thought disorder"
+    ],
+    "cognitive_scores": [
+      90,
+      85,
+      82,
+      81,
+      87
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 99,
+    "age": 49,
+    "symptoms": [
+      "delusions",
+      "hallucinations"
+    ],
+    "cognitive_scores": [
+      80,
+      75,
+      73,
+      69,
+      71
+    ],
+    "relapsed": false
+  },
+  {
+    "patient_id": 100,
+    "age": 40,
+    "symptoms": [
+      "flat affect",
+      "delusions"
+    ],
+    "cognitive_scores": [
+      72,
+      68,
+      66,
+      64,
+      66
+    ],
+    "relapsed": false
   }
 ]

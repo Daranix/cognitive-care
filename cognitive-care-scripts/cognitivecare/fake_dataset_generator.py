@@ -14,20 +14,25 @@ def generate_schizophrenia_dataset(num_patients=100):
     for patient_id in range(1, num_patients + 1):
         age = max(18, int(np.random.normal(40, 10)))
         
-        relapse_probability = 0.4 if age < 30 else 0.6
-        relapsed = random.random() < relapse_probability
-        
-        num_symptoms = random.randint(2, 3)
-        symptoms = random.sample(symptoms_pool, num_symptoms)
-        
-        base_score = random.randint(85, 95)
+        # Base cognitive score generation
+        base_score = random.randint(65, 95)
         cognitive_scores = [
             base_score, # mccb
             base_score - random.randint(3, 7), # cai
-            base_score - random.randint(5, 10), #SCoRS
+            base_score - random.randint(5, 10), # SCoRS
             base_score - random.randint(8, 15), # BACS
             base_score - random.randint(3, 10) # RBANS
         ]
+        
+        # Count scores below 64
+        low_scores_count = sum(score < 64 for score in cognitive_scores)
+        
+        # Determine relapse
+        relapsed = low_scores_count > 3 or (low_scores_count > 2 and age > 45)
+        
+        # Generate symptoms
+        num_symptoms = random.randint(2, 3)
+        symptoms = random.sample(symptoms_pool, num_symptoms)
         
         patient = {
             "patient_id": patient_id,
