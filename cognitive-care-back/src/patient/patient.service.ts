@@ -43,7 +43,7 @@ export class PatientService {
     const [result] = await db.insert(patients).values({
       ...createPatientDto,
     }).returning();
-    await this.predictionsService.requestRecalculatePrediction(createPatientDto.id);
+    await this.predictionsService.requestRecalculatePrediction(result.id);
     return result;
 
   }

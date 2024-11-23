@@ -6,8 +6,10 @@ import { formatDate } from 'date-fns';
 export class PatientDto {
 
     @IsString()
+    @IsOptional()
     @AutoMap()
     id: string;
+
     @AutoMap()
     @IsString()
     fullName: string;
@@ -26,6 +28,7 @@ export class PatientDto {
     birthDate: Date;
 
     @IsString()
+    @IsOptional()
     @AutoMap()
     summary: string;
 
