@@ -74,7 +74,6 @@ El SGCP recopilará información detallada de cada paciente mediante:
 
 Con esta solución, el Dr. Javier podrá transformar la manera en que gestiona la esquizofrenia, brindando una atención innovadora y centrada en el paciente.
 
-![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR4XmP4//8/AwAI/AL+GwXmLwAAAABJRU5ErkJggg==)
 
 **Background sobre esquizofrenia y overview general de distintos marcadores de la enfermedad.**
 
@@ -146,7 +145,6 @@ Predicting schizophrenia involves identifying **biological, behavioral, and cogn
 - **Cannabis Use**:
   - Associated with increased risk, especially in genetically predisposed individuals.
 
-![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR4XmP4//8PAwAI9gL7zpsyJAAAAABJRU5ErkJggg==)
 
 **1\. Cognitive Markers**
 
@@ -285,7 +283,6 @@ Components: <https://preline.co/docs/progress.html>
 
 Cognitive and behavioral markers can help identify individuals at **high risk** for schizophrenia or in the **prodromal phase**. Early interventions, such as **cognitive remediation**, social skills training, and low-dose antipsychotics, may delay or even prevent the onset of full psychosis.
 
-![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR4XmP4//8vAwAI+AL8ldyzEQAAAABJRU5ErkJggg==)
 
 **Ejemplos de tests para el paciente en su día a día desde casa (pasos futuros):**
 
@@ -378,11 +375,9 @@ Cognitive and behavioral markers can help identify individuals at **high risk** 
     3. Registra errores de omisión y de comisión.
 - **Duración**: 3-5 minutos.
 
-![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR4XmP4//8fAwAI+gL9STzyuwAAAABJRU5ErkJggg==)
+# Prototipo técnico:
 
-Prototipo técnico:
-
-# 1\. Back-end (Núcleo de Procesamiento)
+## 1\. Back-end (Núcleo de Procesamiento)
 
 - Tecnologías Base:
 - Node.js con framework Nest.js y Express.js para una arquitectura escalable y robusta
@@ -397,7 +392,7 @@ Prototipo técnico:
 
 Adicionalmente, se utiliza el plugin de Swagger para Nest.js que permite crear una definición del API usando el estandar OpenAPI, permitiendo la fácil documentacion del servicio.
 
-# 2\. Front-end (Interfaz Clínica)
+## 2\. Front-end (Interfaz Clínica)
 
 Aplicación Angular con:
 
@@ -410,7 +405,7 @@ Aplicación Angular con:
 
 Para todo lo que es la comunicación con el back-end se utiliza openapi-generator para generar de forma automática toda el código necesario para las llamadas al back-end, aprovechando que en el back-end se ha documentado el api usando el estandar OpenAPI
 
-# 3\. Módulos de Procesamiento Avanzado
+## 3\. Módulos de Procesamiento Avanzado
 
 Conjunto integrado de herramientas de IA y análisis:
 
