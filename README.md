@@ -54,7 +54,7 @@ Dr. Javier, a dedicated psychiatrist, seeks to go beyond simple cognitive functi
 
 ---
 
-[Versión en Español]
+#### [Versión en Español]
 
 ## Acerca de
 Cognitive Care es una plataforma digital integral desarrollada durante el Hackathon 2024 de Boehringer Ingelheim. La solución busca asistir a psiquiatras en el monitoreo, evaluación y predicción del deterioro cognitivo en pacientes con esquizofrenia.
