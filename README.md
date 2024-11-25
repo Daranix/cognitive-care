@@ -2,8 +2,8 @@
 
 _Empowering Mental Health Through Innovation | Innovando en Salud Mental_
 
-- [Readme English](#english-version)
-- [Spanish](#spanish-version)
+- [English](#english-version)
+- [Spanish](#version-en-espanol)
 
 #### [English Version]
 
